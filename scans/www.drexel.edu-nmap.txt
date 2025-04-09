@@ -1,0 +1,25 @@
+# Nmap 7.94SVN scan initiated Wed Apr  9 19:03:02 2025 as: nmap -p 1-65535 -A -v -oN ./scans/www.drexel.edu-nmap.txt www.drexel.edu
+Nmap scan report for www.drexel.edu (144.118.67.10)
+Host is up (0.00028s latency).
+rDNS record for 144.118.67.10: drexel.edu
+Not shown: 43724 filtered tcp ports (net-unreach), 21803 filtered tcp ports (no-response)
+PORT     STATE  SERVICE        VERSION
+21/tcp   closed ftp
+80/tcp   open   tcpwrapped
+110/tcp  closed pop3
+443/tcp  open   tcpwrapped
+554/tcp  closed rtsp
+993/tcp  closed imaps
+8080/tcp closed http-proxy
+8888/tcp closed sun-answerbook
+OS fingerprint not ideal because: Didn't receive UDP response. Please try again with -sSU
+No OS matches for host
+Network Distance: 1 hop
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT     ADDRESS
+1   0.19 ms drexel.edu (144.118.67.10)
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Apr  9 19:04:53 2025 -- 1 IP address (1 host up) scanned in 110.65 seconds

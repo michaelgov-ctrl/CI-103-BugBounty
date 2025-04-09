@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Wed Apr  9 19:28:29 2025 as: nmap -p 1-65535 -A -v -oN ./scans/math_jblasiak-nmap.txt www.math.drexel.edu/~jblasiak/
+Unable to split netmask from target expression: "www.math.drexel.edu/~jblasiak/"
+Read data files from: /usr/bin/../share/nmap
+WARNING: No targets were specified, so 0 hosts scanned.
+# Nmap done at Wed Apr  9 19:28:29 2025 -- 0 IP addresses (0 hosts up) scanned in 0.50 seconds

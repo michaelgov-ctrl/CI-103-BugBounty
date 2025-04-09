@@ -1,0 +1,29 @@
+# Nmap 7.94SVN scan initiated Wed Apr  9 17:20:00 2025 as: nmap -p 1-65535 -A -v -oN ./scans/libguides.library.drexel.edu-nmap.txt libguides.library.drexel.edu
+adjust_timeouts2: packet supposedly had rtt of -1520390 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -1050228 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -1050228 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -1708163 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -1708163 microseconds.  Ignoring time.
+Nmap scan report for libguides.library.drexel.edu (3.86.37.148)
+Host is up (0.0046s latency).
+Other addresses for libguides.library.drexel.edu (not scanned): 54.88.35.99 54.85.246.96 34.194.39.199
+rDNS record for 3.86.37.148: ec2-3-86-37-148.compute-1.amazonaws.com
+Not shown: 53292 filtered tcp ports (net-unreach), 12241 filtered tcp ports (no-response)
+PORT    STATE SERVICE    VERSION
+80/tcp  open  tcpwrapped
+443/tcp open  tcpwrapped
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: switch|phone
+Running (JUST GUESSING): Cisco embedded (87%), Nokia Symbian OS (86%)
+OS CPE: cpe:/h:cisco:catalyst_1900 cpe:/o:nokia:symbian_os
+Aggressive OS guesses: Cisco Catalyst 1900 switch (87%), Nokia 3600i mobile phone (86%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT     ADDRESS
+1   0.41 ms ec2-3-86-37-148.compute-1.amazonaws.com (3.86.37.148)
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Apr  9 17:21:14 2025 -- 1 IP address (1 host up) scanned in 74.27 seconds

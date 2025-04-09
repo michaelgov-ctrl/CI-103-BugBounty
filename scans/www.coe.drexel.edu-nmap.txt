@@ -1,0 +1,28 @@
+# Nmap 7.94SVN scan initiated Wed Apr  9 18:49:30 2025 as: nmap -p 1-65535 -A -v -oN ./scans/www.coe.drexel.edu-nmap.txt www.coe.drexel.edu
+adjust_timeouts2: packet supposedly had rtt of -1512721 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -513929 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -513929 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -926360 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -926360 microseconds.  Ignoring time.
+Nmap scan report for www.coe.drexel.edu (129.25.61.139)
+Host is up (0.0046s latency).
+rDNS record for 129.25.61.139: coe.drexel.edu
+Not shown: 55058 filtered tcp ports (net-unreach), 10475 filtered tcp ports (no-response)
+PORT    STATE SERVICE    VERSION
+80/tcp  open  tcpwrapped
+443/tcp open  tcpwrapped
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: switch|phone
+Running (JUST GUESSING): Cisco embedded (87%), Nokia Symbian OS (86%)
+OS CPE: cpe:/h:cisco:catalyst_1900 cpe:/o:nokia:symbian_os
+Aggressive OS guesses: Cisco Catalyst 1900 switch (87%), Nokia 3600i mobile phone (86%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT     ADDRESS
+1   0.51 ms coe.drexel.edu (129.25.61.139)
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Apr  9 18:50:46 2025 -- 1 IP address (1 host up) scanned in 76.10 seconds

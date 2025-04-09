@@ -1,0 +1,23 @@
+# Nmap 7.94SVN scan initiated Wed Apr  9 19:14:14 2025 as: nmap -p 1-65535 -A -v -oN ./scans/www.lebow.drexel.edu-nmap.txt www.lebow.drexel.edu
+adjust_timeouts2: packet supposedly had rtt of -1027945 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -508814 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -508814 microseconds.  Ignoring time.
+Nmap scan report for www.lebow.drexel.edu (129.25.235.118)
+Host is up (0.0044s latency).
+rDNS record for 129.25.235.118: lebow.drexel.edu
+Not shown: 54128 filtered tcp ports (net-unreach), 11404 filtered tcp ports (no-response)
+PORT    STATE  SERVICE    VERSION
+80/tcp  open   tcpwrapped
+113/tcp closed ident
+443/tcp open   tcpwrapped
+OS fingerprint not ideal because: Didn't receive UDP response. Please try again with -sSU
+No OS matches for host
+Network Distance: 1 hop
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT     ADDRESS
+1   1.21 ms lebow.drexel.edu (129.25.235.118)
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Apr  9 19:15:30 2025 -- 1 IP address (1 host up) scanned in 76.44 seconds
