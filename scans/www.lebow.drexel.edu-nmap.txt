@@ -1,7 +1,4 @@
 # Nmap 7.94SVN scan initiated Wed Apr  9 19:14:14 2025 as: nmap -p 1-65535 -A -v -oN ./scans/www.lebow.drexel.edu-nmap.txt www.lebow.drexel.edu
-adjust_timeouts2: packet supposedly had rtt of -1027945 microseconds.  Ignoring time.
-adjust_timeouts2: packet supposedly had rtt of -508814 microseconds.  Ignoring time.
-adjust_timeouts2: packet supposedly had rtt of -508814 microseconds.  Ignoring time.
 Nmap scan report for www.lebow.drexel.edu (129.25.235.118)
 Host is up (0.0044s latency).
 rDNS record for 129.25.235.118: lebow.drexel.edu

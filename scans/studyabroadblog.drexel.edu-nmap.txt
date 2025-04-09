@@ -1,11 +1,4 @@
 # Nmap 7.94SVN scan initiated Wed Apr  9 18:35:33 2025 as: nmap -p 1-65535 -A -v -oN ./scans/studyabroadblog.drexel.edu-nmap.txt studyabroadblog.drexel.edu
-adjust_timeouts2: packet supposedly had rtt of -1426221 microseconds.  Ignoring time.
-adjust_timeouts2: packet supposedly had rtt of -1425917 microseconds.  Ignoring time.
-adjust_timeouts2: packet supposedly had rtt of -1425917 microseconds.  Ignoring time.
-adjust_timeouts2: packet supposedly had rtt of -1846611 microseconds.  Ignoring time.
-adjust_timeouts2: packet supposedly had rtt of -1846611 microseconds.  Ignoring time.
-adjust_timeouts2: packet supposedly had rtt of -1821180 microseconds.  Ignoring time.
-adjust_timeouts2: packet supposedly had rtt of -1821180 microseconds.  Ignoring time.
 Nmap scan report for studyabroadblog.drexel.edu (192.0.78.13)
 Host is up (0.0039s latency).
 Other addresses for studyabroadblog.drexel.edu (not scanned): 192.0.78.12

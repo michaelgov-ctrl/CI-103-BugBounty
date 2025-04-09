@@ -1,1 +1,23 @@
-# Nmap 7.94SVN scan initiated Wed Apr  9 16:05:42 2025 as: nmap -p 1-65535 -A -v -oN ./scans/catalog.drexel.edu-nmap.txt catalog.drexel.edu
+# Nmap 7.94SVN scan initiated Wed Apr  9 20:47:09 2025 as: nmap -p 1-65535 -A -v -oN ./scans/catalog.drexel.edu-nmap.txt catalog.drexel.edu
+Nmap scan report for catalog.drexel.edu (12.175.6.47)
+Host is up (0.0017s latency).
+rDNS record for 12.175.6.47: clpublic8a-host.leepfrog.com
+Not shown: 58556 filtered tcp ports (net-unreach), 6977 filtered tcp ports (no-response)
+PORT    STATE SERVICE    VERSION
+80/tcp  open  tcpwrapped
+443/tcp open  tcpwrapped
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: phone|switch|VoIP adapter|bridge|general purpose
+Running (JUST GUESSING): Nokia Symbian OS (90%), Cisco embedded (87%), Oracle Virtualbox (85%), QEMU (85%)
+OS CPE: cpe:/o:nokia:symbian_os cpe:/h:cisco:catalyst_1900 cpe:/h:cisco:ata_188_voip_gateway cpe:/o:oracle:virtualbox cpe:/a:qemu:qemu
+Aggressive OS guesses: Nokia 3600i mobile phone (90%), Cisco Catalyst 1900 switch (87%), Cisco ATA 188 VoIP adapter (85%), Oracle Virtualbox (85%), QEMU user mode network gateway (85%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT     ADDRESS
+1   0.31 ms clpublic8a-host.leepfrog.com (12.175.6.47)
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Apr  9 20:48:37 2025 -- 1 IP address (1 host up) scanned in 87.40 seconds

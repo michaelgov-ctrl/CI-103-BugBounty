@@ -1,9 +1,4 @@
 # Nmap 7.94SVN scan initiated Wed Apr  9 18:49:30 2025 as: nmap -p 1-65535 -A -v -oN ./scans/www.coe.drexel.edu-nmap.txt www.coe.drexel.edu
-adjust_timeouts2: packet supposedly had rtt of -1512721 microseconds.  Ignoring time.
-adjust_timeouts2: packet supposedly had rtt of -513929 microseconds.  Ignoring time.
-adjust_timeouts2: packet supposedly had rtt of -513929 microseconds.  Ignoring time.
-adjust_timeouts2: packet supposedly had rtt of -926360 microseconds.  Ignoring time.
-adjust_timeouts2: packet supposedly had rtt of -926360 microseconds.  Ignoring time.
 Nmap scan report for www.coe.drexel.edu (129.25.61.139)
 Host is up (0.0046s latency).
 rDNS record for 129.25.61.139: coe.drexel.edu

@@ -1,15 +1,4 @@
 # Nmap 7.94SVN scan initiated Wed Apr  9 18:15:39 2025 as: nmap -p 1-65535 -A -v -oN ./scans/newsblog.drexel.edu-nmap.txt newsblog.drexel.edu
-adjust_timeouts2: packet supposedly had rtt of -1026597 microseconds.  Ignoring time.
-adjust_timeouts2: packet supposedly had rtt of -1021380 microseconds.  Ignoring time.
-adjust_timeouts2: packet supposedly had rtt of -1021380 microseconds.  Ignoring time.
-adjust_timeouts2: packet supposedly had rtt of -1787264 microseconds.  Ignoring time.
-adjust_timeouts2: packet supposedly had rtt of -1787264 microseconds.  Ignoring time.
-adjust_timeouts2: packet supposedly had rtt of -1802100 microseconds.  Ignoring time.
-adjust_timeouts2: packet supposedly had rtt of -1802100 microseconds.  Ignoring time.
-adjust_timeouts2: packet supposedly had rtt of -1785246 microseconds.  Ignoring time.
-adjust_timeouts2: packet supposedly had rtt of -1785246 microseconds.  Ignoring time.
-adjust_timeouts2: packet supposedly had rtt of -1815056 microseconds.  Ignoring time.
-adjust_timeouts2: packet supposedly had rtt of -1815056 microseconds.  Ignoring time.
 Nmap scan report for newsblog.drexel.edu (192.0.78.13)
 Host is up (0.0034s latency).
 Other addresses for newsblog.drexel.edu (not scanned): 192.0.78.12

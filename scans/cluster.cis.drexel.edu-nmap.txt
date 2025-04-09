@@ -1,1 +1,25 @@
-# Nmap 7.94SVN scan initiated Wed Apr  9 16:15:30 2025 as: nmap -p 1-65535 -A -v -oN ./scans/cluster.cis.drexel.edu-nmap.txt cluster.cis.drexel.edu
+# Nmap 7.94SVN scan initiated Wed Apr  9 20:39:37 2025 as: nmap -p 1-65535 -A -v -oN ./scans/cluster.cis.drexel.edu-nmap.txt cluster.cis.drexel.edu
+Nmap scan report for cluster.cis.drexel.edu (129.25.203.170)
+Host is up (0.0040s latency).
+rDNS record for 129.25.203.170: cluster.ischool.drexel.edu
+Not shown: 51590 filtered tcp ports (net-unreach), 13942 filtered tcp ports (no-response)
+PORT     STATE SERVICE    VERSION
+22/tcp   open  tcpwrapped
+|_ssh-hostkey: ERROR: Script execution failed (use -d to debug)
+80/tcp   open  tcpwrapped
+8080/tcp open  tcpwrapped
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: phone|switch|VoIP adapter|bridge|general purpose
+Running (JUST GUESSING): Nokia Symbian OS (90%), Cisco embedded (87%), Oracle Virtualbox (85%), QEMU (85%)
+OS CPE: cpe:/o:nokia:symbian_os cpe:/h:cisco:catalyst_1900 cpe:/h:cisco:ata_188_voip_gateway cpe:/o:oracle:virtualbox cpe:/a:qemu:qemu
+Aggressive OS guesses: Nokia 3600i mobile phone (90%), Cisco Catalyst 1900 switch (87%), Cisco ATA 188 VoIP adapter (85%), Oracle Virtualbox (85%), QEMU user mode network gateway (85%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT     ADDRESS
+1   2.32 ms cluster.ischool.drexel.edu (129.25.203.170)
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Apr  9 20:40:56 2025 -- 1 IP address (1 host up) scanned in 78.64 seconds

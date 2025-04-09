@@ -1,11 +1,4 @@
 # Nmap 7.94SVN scan initiated Wed Apr  9 19:18:12 2025 as: nmap -p 1-65535 -A -v -oN ./scans/www.online.drexel.edu-nmap.txt www.online.drexel.edu
-adjust_timeouts2: packet supposedly had rtt of -936557 microseconds.  Ignoring time.
-adjust_timeouts2: packet supposedly had rtt of -939608 microseconds.  Ignoring time.
-adjust_timeouts2: packet supposedly had rtt of -939608 microseconds.  Ignoring time.
-adjust_timeouts2: packet supposedly had rtt of -1779274 microseconds.  Ignoring time.
-adjust_timeouts2: packet supposedly had rtt of -1779274 microseconds.  Ignoring time.
-adjust_timeouts2: packet supposedly had rtt of -1796284 microseconds.  Ignoring time.
-adjust_timeouts2: packet supposedly had rtt of -1796284 microseconds.  Ignoring time.
 Nmap scan report for www.online.drexel.edu (172.64.151.25)
 Host is up (0.0054s latency).
 Other addresses for www.online.drexel.edu (not scanned): 104.18.36.231 2606:4700:4400::ac40:9719 2606:4700:4400::6812:24e7

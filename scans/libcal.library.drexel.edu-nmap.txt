@@ -1,9 +1,4 @@
 # Nmap 7.94SVN scan initiated Wed Apr  9 17:16:16 2025 as: nmap -p 1-65535 -A -v -oN ./scans/libcal.library.drexel.edu-nmap.txt libcal.library.drexel.edu
-adjust_timeouts2: packet supposedly had rtt of -518389 microseconds.  Ignoring time.
-adjust_timeouts2: packet supposedly had rtt of -867112 microseconds.  Ignoring time.
-adjust_timeouts2: packet supposedly had rtt of -867112 microseconds.  Ignoring time.
-adjust_timeouts2: packet supposedly had rtt of -2319232 microseconds.  Ignoring time.
-adjust_timeouts2: packet supposedly had rtt of -2319232 microseconds.  Ignoring time.
 Nmap scan report for libcal.library.drexel.edu (18.213.162.18)
 Host is up (0.0062s latency).
 Other addresses for libcal.library.drexel.edu (not scanned): 54.82.201.33 18.214.47.102 18.235.213.250

@@ -1,11 +1,4 @@
 # Nmap 7.94SVN scan initiated Wed Apr  9 18:41:06 2025 as: nmap -p 1-65535 -A -v -oN ./scans/support.cci.drexel.edu-nmap.txt support.cci.drexel.edu
-adjust_timeouts2: packet supposedly had rtt of -1492548 microseconds.  Ignoring time.
-adjust_timeouts2: packet supposedly had rtt of -1493525 microseconds.  Ignoring time.
-adjust_timeouts2: packet supposedly had rtt of -1493525 microseconds.  Ignoring time.
-adjust_timeouts2: packet supposedly had rtt of -1840184 microseconds.  Ignoring time.
-adjust_timeouts2: packet supposedly had rtt of -1840184 microseconds.  Ignoring time.
-adjust_timeouts2: packet supposedly had rtt of -1837727 microseconds.  Ignoring time.
-adjust_timeouts2: packet supposedly had rtt of -1837727 microseconds.  Ignoring time.
 Nmap scan report for support.cci.drexel.edu (129.25.202.81)
 Host is up (0.0023s latency).
 Not shown: 57263 filtered tcp ports (net-unreach), 8269 filtered tcp ports (no-response)

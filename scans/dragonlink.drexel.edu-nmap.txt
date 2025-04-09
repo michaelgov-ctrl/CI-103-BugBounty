@@ -1,11 +1,4 @@
 # Nmap 7.94SVN scan initiated Wed Apr  9 16:46:21 2025 as: nmap -p 1-65535 -A -v -oN ./scans/dragonlink.drexel.edu-nmap.txt dragonlink.drexel.edu
-adjust_timeouts2: packet supposedly had rtt of -1003782 microseconds.  Ignoring time.
-adjust_timeouts2: packet supposedly had rtt of -1006724 microseconds.  Ignoring time.
-adjust_timeouts2: packet supposedly had rtt of -1006724 microseconds.  Ignoring time.
-adjust_timeouts2: packet supposedly had rtt of -1895881 microseconds.  Ignoring time.
-adjust_timeouts2: packet supposedly had rtt of -1895881 microseconds.  Ignoring time.
-adjust_timeouts2: packet supposedly had rtt of -1887343 microseconds.  Ignoring time.
-adjust_timeouts2: packet supposedly had rtt of -1887343 microseconds.  Ignoring time.
 Nmap scan report for dragonlink.drexel.edu (13.68.101.62)
 Host is up (0.0030s latency).
 Not shown: 58722 filtered tcp ports (net-unreach), 6811 filtered tcp ports (no-response)

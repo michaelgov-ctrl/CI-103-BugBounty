@@ -1,11 +1,4 @@
 # Nmap 7.94SVN scan initiated Wed Apr  9 18:23:04 2025 as: nmap -p 1-65535 -A -v -oN ./scans/offcampushousing.drexel.edu-nmap.txt offcampushousing.drexel.edu
-adjust_timeouts2: packet supposedly had rtt of -1504117 microseconds.  Ignoring time.
-adjust_timeouts2: packet supposedly had rtt of -1510299 microseconds.  Ignoring time.
-adjust_timeouts2: packet supposedly had rtt of -1510299 microseconds.  Ignoring time.
-adjust_timeouts2: packet supposedly had rtt of -1763007 microseconds.  Ignoring time.
-adjust_timeouts2: packet supposedly had rtt of -1763007 microseconds.  Ignoring time.
-adjust_timeouts2: packet supposedly had rtt of -1769876 microseconds.  Ignoring time.
-adjust_timeouts2: packet supposedly had rtt of -1769876 microseconds.  Ignoring time.
 Nmap scan report for offcampushousing.drexel.edu (23.215.177.100)
 Host is up (0.0012s latency).
 Other addresses for offcampushousing.drexel.edu (not scanned): 23.215.177.106

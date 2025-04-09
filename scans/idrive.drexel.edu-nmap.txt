@@ -1,13 +1,4 @@
 # Nmap 7.94SVN scan initiated Wed Apr  9 17:11:21 2025 as: nmap -p 1-65535 -A -v -oN ./scans/idrive.drexel.edu-nmap.txt idrive.drexel.edu
-adjust_timeouts2: packet supposedly had rtt of -1584897 microseconds.  Ignoring time.
-adjust_timeouts2: packet supposedly had rtt of -1588386 microseconds.  Ignoring time.
-adjust_timeouts2: packet supposedly had rtt of -1588386 microseconds.  Ignoring time.
-adjust_timeouts2: packet supposedly had rtt of -1795614 microseconds.  Ignoring time.
-adjust_timeouts2: packet supposedly had rtt of -1795614 microseconds.  Ignoring time.
-adjust_timeouts2: packet supposedly had rtt of -1836445 microseconds.  Ignoring time.
-adjust_timeouts2: packet supposedly had rtt of -1836445 microseconds.  Ignoring time.
-adjust_timeouts2: packet supposedly had rtt of -1877814 microseconds.  Ignoring time.
-adjust_timeouts2: packet supposedly had rtt of -1877814 microseconds.  Ignoring time.
 Nmap scan report for idrive.drexel.edu (148.66.234.46)
 Host is up (0.0063s latency).
 rDNS record for 148.66.234.46: idrive.com

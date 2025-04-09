@@ -1,7 +1,4 @@
 # Nmap 7.94SVN scan initiated Wed Apr  9 18:29:59 2025 as: nmap -p 1-65535 -A -v -oN ./scans/research.coe.drexel.edu-nmap.txt research.coe.drexel.edu
-adjust_timeouts2: packet supposedly had rtt of -1534270 microseconds.  Ignoring time.
-adjust_timeouts2: packet supposedly had rtt of -1532960 microseconds.  Ignoring time.
-adjust_timeouts2: packet supposedly had rtt of -1532960 microseconds.  Ignoring time.
 Nmap scan report for research.coe.drexel.edu (129.25.56.206)
 Host is up (0.0035s latency).
 Not shown: 52575 filtered tcp ports (net-unreach), 12958 filtered tcp ports (no-response)

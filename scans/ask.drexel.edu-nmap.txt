@@ -1,11 +1,4 @@
 # Nmap 7.94SVN scan initiated Wed Apr  9 15:59:10 2025 as: nmap -p 1-65535 -A -v -oN ./scans/ask.drexel.edu-nmap.txt ask.drexel.edu
-adjust_timeouts2: packet supposedly had rtt of -1035402 microseconds.  Ignoring time.
-adjust_timeouts2: packet supposedly had rtt of -1034351 microseconds.  Ignoring time.
-adjust_timeouts2: packet supposedly had rtt of -1034351 microseconds.  Ignoring time.
-adjust_timeouts2: packet supposedly had rtt of -1788134 microseconds.  Ignoring time.
-adjust_timeouts2: packet supposedly had rtt of -1788134 microseconds.  Ignoring time.
-adjust_timeouts2: packet supposedly had rtt of -1785638 microseconds.  Ignoring time.
-adjust_timeouts2: packet supposedly had rtt of -1785638 microseconds.  Ignoring time.
 Nmap scan report for ask.drexel.edu (147.154.47.195)
 Host is up (0.0023s latency).
 Not shown: 52315 filtered tcp ports (net-unreach), 13218 filtered tcp ports (no-response)

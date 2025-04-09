@@ -1,8 +1,4 @@
 # Nmap 7.94SVN scan initiated Wed Apr  9 16:40:08 2025 as: nmap -p 1-65535 -A -v -oN ./scans/docss.med.drexel.edu-nmap.txt docss.med.drexel.edu
-adjust_timeouts2: packet supposedly had rtt of -436459 microseconds.  Ignoring time.
-adjust_timeouts2: packet supposedly had rtt of -436459 microseconds.  Ignoring time.
-adjust_timeouts2: packet supposedly had rtt of -435219 microseconds.  Ignoring time.
-adjust_timeouts2: packet supposedly had rtt of -435219 microseconds.  Ignoring time.
 Nmap scan report for docss.med.drexel.edu (144.118.67.34)
 Host is up (0.00032s latency).
 Not shown: 34009 filtered tcp ports (net-unreach), 31524 filtered tcp ports (no-response)

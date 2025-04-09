@@ -1,7 +1,4 @@
 # Nmap 7.94SVN scan initiated Wed Apr  9 18:55:21 2025 as: nmap -p 1-65535 -A -v -oN ./scans/www.cs.drexel.edu-nmap.txt www.cs.drexel.edu
-adjust_timeouts2: packet supposedly had rtt of -1586230 microseconds.  Ignoring time.
-adjust_timeouts2: packet supposedly had rtt of -2364141 microseconds.  Ignoring time.
-adjust_timeouts2: packet supposedly had rtt of -2364141 microseconds.  Ignoring time.
 Nmap scan report for www.cs.drexel.edu (129.25.203.108)
 Host is up (0.0088s latency).
 rDNS record for 129.25.203.108: cs.drexel.edu
