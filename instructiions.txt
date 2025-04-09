@@ -1,0 +1,691 @@
+Want me to adapt this to a bash script or include Shodan or Amass in it too?
+
+
+
+You said:
+i want security trails removed from that
+
+ChatGPT said:
+Got it! Here's the cleaned-up version of the script with SecurityTrails removed, so it now just uses:
+
+crt.sh for certificate transparency logs (✅ very effective)
+
+Sublist3r for public scraping of subdomains
+
+🧼 Clean Python Script: crt.sh + Sublist3r (no API needed)
+python
+Copy
+Edit
+import requests
+import subprocess
+
+def fetch_from_crtsh(domain):
+    print(f"[+] Fetching subdomains from crt.sh for: {domain}")
+    url = f"https://crt.sh/?q=%25.{domain}&output=json"
+    try:
+        r = requests.get(url, timeout=10)
+        if r.status_code != 200:
+            print("[!] Failed to fetch from crt.sh")
+            return []
+        entries = r.json()
+        subdomains = set()
+        for entry in entries:
+            name = entry['name_value']
+            for sub in name.split('\n'):
+                if '*' not in sub:
+                    subdomains.add(sub.strip())
+        return sorted(subdomains)
+    except Exception as e:
+        print(f"[!] crt.sh error: {e}")
+        return []
+
+def fetch_with_sublist3r(domain):
+    print(f"[+] Running Sublist3r for: {domain}")
+    try:
+        output = subprocess.check_output(["sublist3r", "-d", domain, "-n", "-t", "20"], text=True)
+        return sorted(set(line.strip() for line in output.splitlines() if domain in line))
+    except Exception as e:
+        print(f"[!] Sublist3r error: {e}")
+        return []
+
+def main():
+    domain = input("Enter the domain (e.g. drexel.edu): ").strip()
+
+    all_subs = set()
+
+    crtsh_subs = fetch_from_crtsh(domain)
+    print(f"[+] Found {len(crtsh_subs)} subdomains from crt.sh")
+    all_subs.update(crtsh_subs)
+
+    sublist3r_subs = fetch_with_sublist3r(domain)
+    print(f"[+] Found {len(sublist3r_subs)} subdomains from Sublist3r")
+    all_subs.update(sublist3r_subs)
+
+    print("\n[+] All unique subdomains found:")
+    for sub in sorted(all_subs):
+        print(sub)
+
+    with open(f"{domain}_subdomains.txt", "w") as f:
+        f.write("\n".join(sorted(all_subs)))
+    print(f"\n[+] Results saved to {domain}_subdomains.txt")
+
+if __name__ == "__main__":
+    main()
+📝 How to Run It
+Save the script as subdomain_enum.py
+
+Make sure Sublist3r is installed and accessible in your terminal
+
+Run it:
+
+bash
+Copy
+Edit
+python subdomain_enum.py
+Type the target domain (e.g., drexel.edu)
+
+Want to add Amass or Shodan next? Or maybe automatically filter results against your blocklist?
+
+
+
+You said:
+how do i complete step 2
+
+ChatGPT said:
+To complete Step 2 (installing and setting up Sublist3r), here’s a quick guide depending on your operating system. It’s easy, just follow these steps:
+
+✅ How to Install Sublist3r
+📦 Prerequisites (install these first if missing):
+You need Python 3 and git.
+
+On Linux/macOS:
+
+bash
+Copy
+Edit
+sudo apt update && sudo apt install python3 git -y
+On macOS (with Homebrew):
+
+bash
+Copy
+Edit
+brew install python3 git
+On Windows:
+
+Install Python 3
+
+Install Git for Windows
+
+🔧 Install Sublist3r:
+⬇️ 1. Clone the repo:
+bash
+Copy
+Edit
+git clone https://github.com/aboul3la/Sublist3r.git
+cd Sublist3r
+📦 2. Install the required Python libraries:
+bash
+Copy
+Edit
+pip install -r requirements.txt
+⚠️ Use pip3 if your default is Python 2 (e.g., pip3 install -r requirements.txt)
+
+✅ 3. (Optional) Make Sublist3r runnable from anywhere:
+If you're using Linux/macOS:
+
+bash
+Copy
+Edit
+sudo ln -s $(pwd)/sublist3r.py /usr/local/bin/sublist3r
+Now you can just type sublist3r in your terminal from anywhere 🎉
+
+🧪 Test that it works:
+Run this command:
+
+bash
+Copy
+Edit
+sublist3r -d example.com
+You should see subdomains being enumerated and printed to the screen.
+
+Need help getting it running on Windows or want me to bundle it with a GUI?
+
+
+
+You said:
+explain how to complete step 1
+
+ChatGPT said:
+Sure! Let's go through Step 1, which involves ensuring that you have the necessary prerequisites installed, specifically Python 3 and Git. Here's a breakdown for different operating systems:
+
+📦 Installing Python 3 and Git
+1️⃣ Install Python 3
+Linux (Debian/Ubuntu):
+Run the following commands to install Python 3:
+
+bash
+Copy
+Edit
+sudo apt update
+sudo apt install python3 python3-pip -y
+This installs Python 3 along with pip, which is the package manager for Python.
+
+macOS:
+You can install Python 3 using Homebrew (a package manager for macOS):
+
+bash
+Copy
+Edit
+brew install python
+If you don't have Homebrew, you can install it from https://brew.sh and then run the above command.
+
+Windows:
+Download the latest Python 3 version from the official Python website.
+
+During installation, make sure to check the box that says "Add Python to PATH" before clicking Install Now.
+
+This will make Python and pip (the Python package manager) accessible globally from your command prompt.
+
+2️⃣ Install Git
+Linux (Debian/Ubuntu):
+To install Git, run:
+
+bash
+Copy
+Edit
+sudo apt install git -y
+macOS:
+You can also install Git via Homebrew:
+
+bash
+Copy
+Edit
+brew install git
+Or, Git may already be installed if you have Xcode tools. If not, you can install it via Homebrew as shown above.
+
+Windows:
+Download the Git for Windows installer from here.
+
+Run the installer and follow the setup instructions (leave the default options unless you have a specific reason to change them).
+
+🧪 Check the Installation
+After installing Python 3 and Git, verify their installation by running the following commands in your terminal/command prompt:
+
+Check Python:
+
+bash
+Copy
+Edit
+python3 --version
+You should see an output like:
+
+nginx
+Copy
+Edit
+Python 3.x.x
+(If you’re on Windows, you might need to use python instead of python3)
+
+Check Git:
+
+bash
+Copy
+Edit
+git --version
+This should display something like:
+
+nginx
+Copy
+Edit
+git version 2.x.x
+Once you’ve confirmed that Python 3 and Git are installed, you’re ready for Step 2, which is installing Sublist3r.
+
+Let me know if you have any questions about the setup!
+
+
+
+You said:
+continue onto step 2
+
+ChatGPT said:
+Great! Now that you have Python 3 and Git installed, let's move on to Step 2: installing Sublist3r.
+
+🛠️ Step 2: Installing Sublist3r
+Here are the steps to install and set up Sublist3r, a tool for enumerating subdomains.
+
+⬇️ 1. Clone the Sublist3r Repository
+Open your terminal or command prompt.
+
+Navigate to the directory where you'd like to clone the Sublist3r repository:
+
+bash
+Copy
+Edit
+cd ~  # This takes you to your home directory (you can change to any directory you like).
+Clone the repository from GitHub:
+
+bash
+Copy
+Edit
+git clone https://github.com/aboul3la/Sublist3r.git
+This will download the Sublist3r code to a folder called Sublist3r.
+
+📦 2. Install Dependencies
+Change into the Sublist3r directory:
+
+bash
+Copy
+Edit
+cd Sublist3r
+Install the required Python libraries (these are listed in requirements.txt):
+
+bash
+Copy
+Edit
+pip install -r requirements.txt
+This will install all dependencies for Sublist3r (such as requests).
+
+If you're using Python 3 and your default pip is for Python 2, run:
+
+bash
+Copy
+Edit
+pip3 install -r requirements.txt
+✅ 3. Test Sublist3r
+After installation, test Sublist3r to make sure it's working. Run the following command:
+
+bash
+Copy
+Edit
+python sublist3r.py -d example.com
+Replace example.com with the domain you want to test against. You should see a list of subdomains being discovered, like this:
+
+diff
+Copy
+Edit
+[+] Found 5 subdomains:
+- www.example.com
+- mail.example.com
+- api.example.com
+- blog.example.com
+- dev.example.com
+🔄 (Optional) Add Sublist3r to Your PATH
+To make Sublist3r easily accessible from any directory in your terminal (so you don't have to navigate to its folder every time), you can create a symbolic link:
+
+For Linux/macOS:
+
+bash
+Copy
+Edit
+sudo ln -s $(pwd)/sublist3r.py /usr/local/bin/sublist3r
+After this, you can run sublist3r from any directory like this:
+
+bash
+Copy
+Edit
+sublist3r -d example.com
+For Windows, this isn't as straightforward, but you can add the Sublist3r directory to your PATH manually via the System Environment Variables settings.
+
+🎉 You're Done!
+Now you have Sublist3r installed and working. You can run it using the following command format:
+
+bash
+Copy
+Edit
+sublist3r -d [target-domain]
+🚀 Next Steps
+Now, you can run the Python script I shared earlier, which combines Sublist3r and crt.sh for subdomain enumeration.
+
+Let me know if you need help with running the script, or if you need any further clarifications!
+
+
+
+You said:
+checking installation of python with python3 --version returns Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Apps > Advanced app settings > App execution aliases. after i downloaded it
+
+ChatGPT said:
+It looks like you encountered an issue where Python 3 is not correctly set up in your system's PATH. This can happen on Windows when Python is installed, but the system isn't able to find it from the command prompt.
+
+Here’s how to resolve it:
+
+🚨 Fix: Adding Python to the PATH (Windows)
+When you installed Python, it's possible that the option to add Python to your system PATH wasn't selected. Let’s fix that:
+
+1. Reinstall Python and Ensure You Add It to PATH
+The easiest way to fix this is to reinstall Python, making sure the "Add Python to PATH" option is checked during installation.
+
+Uninstall the current Python installation:
+
+Go to Settings > Apps > Python and click "Uninstall."
+
+Reinstall Python:
+
+Go to the Python Downloads page.
+
+Download the latest version of Python for Windows.
+
+During installation, check the box that says "Add Python to PATH" at the bottom of the install window.
+
+Then, click Install Now.
+
+Verify Python Installation: Once installation is complete, open Command Prompt (not PowerShell) and type:
+
+bash
+Copy
+Edit
+python --version
+You should see something like:
+
+nginx
+Copy
+Edit
+Python 3.x.x
+Or if you still need to use python3:
+
+bash
+Copy
+Edit
+python3 --version
+📝 Manual Fix (Without Reinstalling)
+If you don't want to reinstall Python, you can manually add Python to the PATH:
+
+1. Find Your Python Installation Path
+Open File Explorer and go to C:\Users\<YourUsername>\AppData\Local\Programs\Python\Python3x\ (replace 3x with your specific version number).
+
+Copy the path of the folder (e.g., C:\Users\John\AppData\Local\Programs\Python\Python39\).
+
+2. Add Python to the System PATH
+Press Windows key + R, type sysdm.cpl, and press Enter.
+
+In the System Properties window, go to the Advanced tab, and click on Environment Variables.
+
+Under System Variables, scroll down and find the Path variable, then select it and click Edit.
+
+In the Edit Environment Variable window, click New and paste the path you copied earlier (e.g., C:\Users\John\AppData\Local\Programs\Python\Python39\).
+
+Add one more path to the Scripts directory (this allows pip to work):
+
+Add: C:\Users\John\AppData\Local\Programs\Python\Python39\Scripts\
+
+Click OK to close all the windows.
+
+3. Verify the Fix
+Open a new Command Prompt (important to open a new one) and type:
+
+bash
+Copy
+Edit
+python --version
+You should now be able to run Python from any directory in the Command Prompt!
+
+Let me know if you run into any issues during this process. Once you’ve confirmed Python is working, you can continue with the Sublist3r installation.
+
+
+
+You said:
+python3 --version returns Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Apps > Advanced app settings > App execution aliases.
+
+ChatGPT said:
+It seems like Python 3 is not correctly installed or configured in your system PATH, and your system is prompting you to install Python from the Microsoft Store.
+
+Let's fix this step-by-step:
+
+🚨 Solution: Fix Python 3 Installation on Windows
+1. Uninstall any existing Python installation
+Open Settings > Apps > Search for Python.
+
+If you see any installed version of Python, uninstall it.
+
+2. Reinstall Python with PATH added
+When you reinstall Python, make sure to check the option to add Python to PATH.
+
+Go to the official Python website:
+Download Python.
+
+Download Python for Windows:
+
+Choose the latest version (Python 3.x.x) for Windows (not the Windows Store version).
+
+Install Python:
+
+Important: When the installation window appears, make sure to check the box “Add Python to PATH” before clicking Install Now.
+
+This is crucial, as it automatically sets up the Python and pip commands in your system’s PATH, making it accessible from any directory in the Command Prompt.
+
+Verify Python Installation:
+
+Once the installation finishes, restart your computer.
+
+Open Command Prompt (not PowerShell) and type:
+
+bash
+Copy
+Edit
+python --version
+You should see something like:
+
+nginx
+Copy
+Edit
+Python 3.x.x
+Test Python3 Command (if you are still using python3):
+
+Type:
+
+bash
+Copy
+Edit
+python3 --version
+It should also show the Python version (e.g., Python 3.x.x).
+
+🔧 If You Still See the Same Error
+If Python still isn't being found or if you see the same error after installing, it's possible that the Microsoft Store is interfering with the system's default Python installation. Here's how to disable that:
+
+3. Disable the Python Microsoft Store Shortcut:
+Press the Windows key + I to open Settings.
+
+Go to Apps > Advanced app settings > App execution aliases.
+
+Scroll down and disable the Python-related aliases (turn off python.exe and python3.exe).
+
+4. Check Python Version Again
+After doing the above steps, open a new Command Prompt window and check the Python version:
+
+bash
+Copy
+Edit
+python --version
+or
+
+bash
+Copy
+Edit
+python3 --version
+This should resolve the issue. If Python is now correctly installed, you can proceed with installing Sublist3r.
+
+Let me know how it goes!
+
+
+
+You said:
+i am now recieveing C:\Users\tyler\Documents\Sublist3r>python3 --version
+'python3' is not recognized as an internal or external command,
+operable program or batch file. instead
+
+ChatGPT said:
+It looks like you are using Windows, and the python3 command is not recognized. This is a common issue on Windows, as Windows typically uses python instead of python3. Let's fix it!
+
+🔧 Fix for Python Command on Windows
+On Windows, Python is often accessible through python instead of python3. You can check by running the following command:
+
+bash
+Copy
+Edit
+python --version
+If this works and returns a version (e.g., Python 3.x.x), then python is correctly installed, but you need to use python instead of python3 when running commands.
+
+📌 Steps to Resolve
+Try using python instead of python3:
+
+In Command Prompt, type:
+
+bash
+Copy
+Edit
+python --version
+This should show the Python version (e.g., Python 3.x.x).
+
+Update your script or commands:
+
+In your Python scripts and commands, replace python3 with python since that's how it is referenced in Windows.
+
+🔄 Check if Python is Installed Properly
+If you still face issues, let’s ensure Python is installed and added to your system PATH properly. Follow these steps:
+
+1. Verify Python in PATH
+Open Command Prompt.
+
+Type:
+
+bash
+Copy
+Edit
+echo %PATH%
+Check if the path to Python is listed (it should be something like C:\Users\<YourUsername>\AppData\Local\Programs\Python\Python3x\).
+
+2. Check for python Command in Windows
+Open Command Prompt again.
+
+Run:
+
+bash
+Copy
+Edit
+python --version
+If it’s still not recognized, Python might not have been added to your PATH during installation. You can add it manually.
+
+📝 Manually Add Python to PATH (Windows)
+If Python is still not recognized, here's how to manually add it to your PATH:
+
+Find the Python installation path:
+
+Go to C:\Users\<YourUsername>\AppData\Local\Programs\Python\Python3x\ (replace 3x with the specific version of Python).
+
+Copy this path.
+
+Add Python to PATH:
+
+Press Windows key + R to open the Run dialog.
+
+Type sysdm.cpl and press Enter to open System Properties.
+
+Click on the Advanced tab, then click Environment Variables.
+
+Under System Variables, find and select Path, then click Edit.
+
+Click New and paste the Python path you copied earlier (e.g., C:\Users\<YourUsername>\AppData\Local\Programs\Python\Python3x\).
+
+Also, add the Scripts folder by adding:
+
+makefile
+Copy
+Edit
+C:\Users\<YourUsername>\AppData\Local\Programs\Python\Python3x\Scripts\
+Click OK to close all windows.
+
+Restart your computer to apply the changes.
+
+3. Test Again
+Open Command Prompt and type:
+
+bash
+Copy
+Edit
+python --version
+✅ Final Step: Using Sublist3r
+Once Python is working, you can now use Sublist3r. If everything is set up properly, go ahead and follow the earlier steps to run Sublist3r like this:
+
+bash
+Copy
+Edit
+python sublist3r.py -d example.com
+Let me know if this works! If you’re still having issues, feel free to reach out.
+
+
+
+You said:
+echo %PATH% returns:
+
+C:\Users\tyler\Documents\Sublist3r>echo %PATH%
+C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Git\cmd;C:\Users\tyler\AppData\Local\Programs\Python\Launcher\;C:\Users\tyler\AppData\Local\Microsoft\WindowsApps;C:\Users\tyler\AppData\Local\GitHubDesktop\bin;C:\Users\tyler\AppData\Local\Programs\Microsoft VS Code\bin
+
+ChatGPT said:
+It looks like Python is not showing up directly in the PATH output you provided. There is an entry for C:\Users\tyler\AppData\Local\Programs\Python\Launcher\, but the actual Python directory where Python is installed might not be included. Let's fix that by manually adding the correct path to Python and pip.
+
+🛠️ Fix: Add Python to the PATH Manually
+1. Find the Python Installation Path
+Navigate to the Python installation directory:
+
+Open File Explorer and go to:
+C:\Users\tyler\AppData\Local\Programs\Python\
+
+Inside this folder, you should see a subfolder for the specific version of Python installed, such as Python39, Python38, etc.
+
+The path should look like:
+C:\Users\tyler\AppData\Local\Programs\Python\Python39\ (for example).
+
+Copy the Python path:
+
+For example, copy this folder path:
+C:\Users\tyler\AppData\Local\Programs\Python\Python39\
+
+Also, copy the Scripts folder (you will need to add both):
+
+For example:
+C:\Users\tyler\AppData\Local\Programs\Python\Python39\Scripts\
+
+2. Manually Add Python to the PATH
+Now, let’s manually add Python and its Scripts folder to the PATH:
+
+Press Windows key + R to open the Run dialog.
+
+Type sysdm.cpl and press Enter to open System Properties.
+
+In the System Properties window, click on the Advanced tab and then click Environment Variables.
+
+Under System Variables, scroll down and find Path, select it, and click Edit.
+
+In the Edit Environment Variable window:
+
+Click New and paste the path you copied for Python (e.g., C:\Users\tyler\AppData\Local\Programs\Python\Python39\).
+
+Click New again and paste the path for the Scripts folder (e.g., C:\Users\tyler\AppData\Local\Programs\Python\Python39\Scripts\).
+
+Click OK to close all the windows.
+
+3. Verify the Changes
+Restart your computer to apply the changes.
+
+Open Command Prompt and type:
+
+bash
+Copy
+Edit
+python --version
+This should show the Python version, such as:
+
+nginx
+Copy
+Edit
+Python 3.x.x
+Try using Sublist3r again by running:
+
+bash
+Copy
+Edit
+python sublist3r.py -d example.com
+📝 Next Steps
+If the above steps work, you're all set to use Sublist3r and run the script as intended.
+
+If you encounter any issues with running the commands or if Python still doesn't appear, please let me know!
+
+Let me know if you need further assistance!
