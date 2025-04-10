@@ -55,5 +55,7 @@ newsblog.drexel.edu
 www.dusers.drexel.edu -> www.techserv.drexel.edu/techserv/
 
 
-noc:
-gw25-te-8-1.noc.drexel.edu - switch
+noc - switch:
+gw13-te-8-1.noc.drexel.edu
+gw25-te-8-1.noc.drexel.edu
+gw41-vlan-144-118-0-206.noc.drexel.edu
