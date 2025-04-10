@@ -1,0 +1,59 @@
+interesting:
+www.giving.drexel.edu -> https://alumni.drexel.edu/s/1683/form/16/form.aspx?sid=1683&gid=2&pgid=476&content_id=106
+wireless.ece.drexel.edu
+webwork.math.drexel.edu
+vcl.cci.drexel.edu
+twentyfour.drexel.edu
+secureia.drexel.edu
+sacan.biomed.drexel.edu
+sacan.urcf.drexel.edu
+rush08.cci.drexel.edu/login
+quad.cs.drexel.edu
+reccenter.drexel.edu
+id.cci.drexel.edu
+pbq.drexel.edu
+smtp.mail.drexel.edu
+lincs.cci.drexel.edu -> https://lincs.cci.drexel.edu/weimao/
+matrix.cci.drexel.edu -^
+
+default pages:
+sim.med.drexel.edu
+cis.cci.drexel.edu
+deptapp.drexel.edu
+digm.drexel.edu
+filemaker.lcc.drexel.edu
+
+old jquery (console -> jQuery.fn.jquery):
+https://faceshields.cci.drexel.edu/volunteer/create/
+
+what is this (synology):
+fragilehedgehog.bioscience.drexel.edu
+
+is this ftp?
+ftp.lebow.drexel.edu
+
+has form:
+https://grand.drexel.edu/ifac_du/
+
+
+more physics:
+alab.physics.drexel.edu/
+groundhog.physics.drexel.edu
+ilab1.physics.drexel.edu
+ilab2.physics.drexel.edu
+ilab3.physics.drexel.edu
+ilab4.physics.drexel.edu
+labserver.physics.drexel.edu
+labserver2.physics.drexel.edu
+labserver3.physics.drexel.edu
+nulab1.physics.drexel.edu
+nulab2.physics.drexel.edu
+nurack1.physics.drexel.edu
+
+wordpress:
+newsblog.drexel.edu
+www.dusers.drexel.edu -> www.techserv.drexel.edu/techserv/
+
+
+noc:
+gw25-te-8-1.noc.drexel.edu - switch
