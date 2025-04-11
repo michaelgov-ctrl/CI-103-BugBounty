@@ -23,7 +23,7 @@ func main() {
 	wrappedClient.logger = slog.New(slog.NewTextHandler(os.Stdout, nil))
 
 	for email := range wrappedClient.GenerateEmails() {
-		delay := time.Duration(10 * time.Second) // looks like the site does bucketed rate limiting with roughly 5 requests per minute
+		delay := time.Duration(10 * time.Second) // looks like the site does bucketed rate limiting with 6 requests per minute
 		time.Sleep(delay)
 
 		status, err := wrappedClient.EnumerateUser(email)

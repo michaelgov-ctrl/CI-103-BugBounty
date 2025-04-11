@@ -21,7 +21,8 @@ func GenerateLetters(length int) []string {
 
 func GenerateDigits(length int) []string {
 	var results []string
-	digits := []rune("0123456789")
+	firstDigits := []rune("123456789")
+	otherDigits := []rune("0123456789")
 
 	var helper func(prefix string, depth int)
 	helper = func(prefix string, depth int) {
@@ -29,7 +30,13 @@ func GenerateDigits(length int) []string {
 			results = append(results, prefix)
 			return
 		}
-		for _, d := range digits {
+		var set []rune
+		if len(prefix) == 0 {
+			set = firstDigits
+		} else {
+			set = otherDigits
+		}
+		for _, d := range set {
 			helper(prefix+string(d), depth-1)
 		}
 	}

@@ -119,7 +119,7 @@ func (wc WrappedClient) GenerateEmails() <-chan string {
 	go func() {
 		defer close(out)
 		letterLengths := []int{2, 3}
-		digitLengths := []int{2, 3}
+		digitLengths := []int{3}
 
 		for _, lLen := range letterLengths {
 			letters := GenerateLetters(lLen)
