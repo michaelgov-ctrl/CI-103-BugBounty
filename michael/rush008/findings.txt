@@ -1,0 +1,17 @@
+└╼$ ssh rush08@rush08.cci.drexel.edu
+The authenticity of host 'rush08.cci.drexel.edu (129.25.203.120)' can't be established.
+ED25519 key fingerprint is SHA256:9QvqJNqXf/65b00z8d6AEOqplca5MAWGf9tvSOHo5FU.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'rush08.cci.drexel.edu' (ED25519) to the list of known hosts.
+rush08@rush08.cci.drexel.edu's password: 
+Permission denied, please try again.
+rush08@rush08.cci.drexel.edu's password: 
+Permission denied, please try again.
+rush08@rush08.cci.drexel.edu's password: 
+rush08@rush08.cci.drexel.edu: Permission denied (publickey,password).
+
+
+
+default user with password auth setup?
+

@@ -1,0 +1,173 @@
+wordpress site
+
+wpscan output:
+
+[user@parrot]─[~/wpscan]
+└──╼ $wpscan --url https://newsblog.drexel.edu/
+_______________________________________________________________
+         __          _______   _____
+         \ \        / /  __ \ / ____|
+          \ \  /\  / /| |__) | (___   ___  __ _ _ __ ®
+           \ \/  \/ / |  ___/ \___ \ / __|/ _` | '_ \
+            \  /\  /  | |     ____) | (__| (_| | | | |
+             \/  \/   |_|    |_____/ \___|\__,_|_| |_|
+
+         WordPress Security Scanner by the WPScan Team
+                         Version 3.8.28
+       Sponsored by Automattic - https://automattic.com/
+       @_WPScan_, @ethicalhack3r, @erwan_lr, @firefart
+_______________________________________________________________
+
+[+] URL: https://newsblog.drexel.edu/ [192.0.78.12]
+[+] Started: Thu Apr 10 21:23:02 2025
+
+Interesting Finding(s):
+
+[+] Headers
+ | Interesting Entries:
+ |  - server: nginx
+ |  - x-hacker: Want root?  Visit join.a8c.com and mention this header.
+ |  - host-header: WordPress.com
+ |  - x-ac: 1.dca _atomic_dca STALE
+ |  - alt-svc: h3=":443"; ma=86400
+ | Found By: Headers (Passive Detection)
+ | Confidence: 100%
+
+[+] robots.txt found: https://newsblog.drexel.edu/robots.txt
+ | Interesting Entries:
+ |  - /wp-admin/
+ |  - /wp-admin/admin-ajax.php
+ | Found By: Robots Txt (Aggressive Detection)
+ | Confidence: 100%
+
+[+] XML-RPC seems to be enabled: https://newsblog.drexel.edu/xmlrpc.php
+ | Found By: Link Tag (Passive Detection)
+ | Confidence: 100%
+ | Confirmed By: Direct Access (Aggressive Detection), 100% confidence
+ | References:
+ |  - http://codex.wordpress.org/XML-RPC_Pingback_API
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_ghost_scanner/
+ |  - https://www.rapid7.com/db/modules/auxiliary/dos/http/wordpress_xmlrpc_dos/
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_xmlrpc_login/
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_pingback_access/
+
+[+] WordPress readme found: https://newsblog.drexel.edu/readme.html
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+
+[+] This site has 'Must Use Plugins': https://newsblog.drexel.edu/wp-content/mu-plugins/
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 80%
+ | Reference: http://codex.wordpress.org/Must_Use_Plugins
+
+[+] The external WP-Cron seems to be enabled: https://newsblog.drexel.edu/wp-cron.php
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 60%
+ | References:
+ |  - https://www.iplocation.net/defend-wordpress-from-ddos
+ |  - https://github.com/wpscanteam/wpscan/issues/1299
+
+[+] WordPress version 6.7.2 identified (Latest, released on 2025-02-11).
+ | Found By: Emoji Settings (Passive Detection)
+ |  - https://newsblog.drexel.edu/, Match: 'wp-includes\/js\/wp-emoji-release.min.js?ver=6.7.2'
+ | Confirmed By: Most Common Wp Includes Query Parameter In Homepage (Passive Detection)
+ |  - https://newsblog.drexel.edu/wp-includes/css/dashicons.min.css?ver=6.7.2
+
+[i] The main theme could not be detected.
+
+[+] Enumerating All Plugins (via Passive Methods)
+[+] Checking Plugin Versions (via Passive and Aggressive Methods)
+
+[i] Plugin(s) Identified:
+
+[+] jetpack
+ | Location: https://newsblog.drexel.edu/wp-content/plugins/jetpack/
+ | Latest Version: 14.5 (up to date)
+ | Last Updated: 2025-04-02T14:23:00.000Z
+ |
+ | Found By: Urls In Homepage (Passive Detection)
+ | Confirmed By: Urls In 404 Page (Passive Detection)
+ |
+ | Version: 14.6-a.1 (60% confidence)
+ | Found By: Change Log (Aggressive Detection)
+ |  - https://newsblog.drexel.edu/wp-content/plugins/jetpack/CHANGELOG.md, Match: '## 14.6-a.1 -'
+
+[+] stop-user-enumeration
+ | Location: https://newsblog.drexel.edu/wp-content/plugins/stop-user-enumeration/
+ | Latest Version: 1.7
+ | Last Updated: 2025-03-20T20:01:00.000Z
+ |
+ | Found By: Urls In 404 Page (Passive Detection)
+ |
+ | [!] 7 vulnerabilities identified:
+ |
+ | [!] Title: Stop User Enumeration 1.2.4 - POST Request Protection Bypass
+ |     Fixed in: 1.2.5
+ |     References:
+ |      - https://wpscan.com/vulnerability/644067e3-cbd4-40f7-bba2-f025d670633c
+ |      - https://packetstormsecurity.com/files/125035/
+ |      - https://seclists.org/fulldisclosure/2014/Feb/3
+ |
+ | [!] Title: Stop User Enumeration <= 1.3.3 - Username Enumeration Bypass
+ |     Fixed in: 1.3.4
+ |     References:
+ |      - https://wpscan.com/vulnerability/8e6e5bd9-4a4d-4b0f-9885-f9f13beb422a
+ |      - https://wordpress.org/plugins/stop-user-enumeration/changelog/
+ |      - https://plugins.trac.wordpress.org/changeset/1390935/stop-user-enumeration
+ |
+ | [!] Title: Stop User Enumeration <= 1.3.4 - Username Enumeration Bypasses
+ |     Fixed in: 1.3.5
+ |     References:
+ |      - https://wpscan.com/vulnerability/8ae7958c-26e9-4caf-8a8b-cf1d2e6410a0
+ |      - https://seclists.org/fulldisclosure/2017/Jan/10
+ |      - https://advisories.dxw.com/advisories/stop-user-enumeration-does-not-stop-user-enumeration/
+ |
+ | [!] Title: Stop User Enumeration 1.3.5-1.3.7 - Unauthenticated Reflected Cross-Site Scripting (XSS)
+ |     Fixed in: 1.3.8
+ |     References:
+ |      - https://wpscan.com/vulnerability/956cc5fd-af06-43ac-aa85-46b468c73501
+ |      - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-18536
+ |      - https://plugins.trac.wordpress.org/changeset/1575129/stop-user-enumeration
+ |
+ | [!] Title: Stop User Enumeration <= 1.3.8 - REST API Bypass
+ |     Fixed in: 1.3.9
+ |     References:
+ |      - https://wpscan.com/vulnerability/0b2cc284-213d-414b-9e6d-d10db0d90148
+ |      - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-1000226
+ |      - https://advisories.dxw.com/advisories/stop-user-enumeration-rest-api/
+ |      - https://seclists.org/fulldisclosure/2017/Jul/67
+ |
+ | [!] Title: Freemius Library < 2.2.4 - Subscriber+ Arbitrary Option Update 
+ |     Fixed in: 1.3.20
+ |     References:
+ |      - https://wpscan.com/vulnerability/6ff37c2e-e21d-4abc-bafe-8ca6a2c1ed76
+ |      - https://wptavern.com/freemius-patches-severe-vulnerability-in-library-used-by-popular-wordpress-plugins
+ |      - https://freemius.com/blog/sdk-security-vulnerability/
+ |      - https://github.com/Freemius/wordpress-sdk/commit/50a7ca3d921d59e1d2b39bb6ab3c6c7efde494b8
+ |      - https://plugins.trac.wordpress.org/changeset/2039381/
+ |
+ | [!] Title: Freemius SDK < 2.5.10 - Reflected Cross-Site Scripting
+ |     Fixed in: 1.4.0
+ |     References:
+ |      - https://wpscan.com/vulnerability/7fd1ad0e-9db9-47b7-9966-d3f5a8771571
+ |      - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-33999
+ |
+ | The version could not be determined.
+
+[+] Enumerating Config Backups (via Passive and Aggressive Methods)
+ Checking Config Backups - Time: 00:00:04 <===============================================================================================================> (137 / 137) 100.00% Time: 00:00:04
+
+[i] No Config Backups Found.
+
+[+] WPScan DB API OK
+ | Plan: free
+ | Requests Done (during the scan): 3
+ | Requests Remaining: 22
+
+[+] Finished: Thu Apr 10 21:23:11 2025
+[+] Requests Done: 144
+[+] Cached Requests: 34
+[+] Data Sent: 57.771 KB
+[+] Data Received: 129.311 KB
+[+] Memory used: 230.188 MB
+[+] Elapsed time: 00:00:08

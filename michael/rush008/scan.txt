@@ -1,0 +1,24 @@
+# Nmap 7.94SVN scan initiated Fri Apr 11 02:06:23 2025 as: nmap -p 1-65535 -A -v -oN ./scans/rush-nmap.txt rush08.cci.drexel.edu
+Nmap scan report for rush08.cci.drexel.edu (129.25.203.120)
+Host is up (0.0031s latency).
+Not shown: 56358 filtered tcp ports (net-unreach), 9174 filtered tcp ports (no-response)
+PORT    STATE SERVICE    VERSION
+22/tcp  open  tcpwrapped
+|_ssh-hostkey: ERROR: Script execution failed (use -d to debug)
+80/tcp  open  tcpwrapped
+443/tcp open  tcpwrapped
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: switch|phone
+Running (JUST GUESSING): Cisco embedded (87%), Nokia Symbian OS (86%)
+OS CPE: cpe:/h:cisco:catalyst_1900 cpe:/o:nokia:symbian_os
+Aggressive OS guesses: Cisco Catalyst 1900 switch (87%), Nokia 3600i mobile phone (86%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT     ADDRESS
+1   0.77 ms rush08.cci.drexel.edu (129.25.203.120)
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Apr 11 02:07:31 2025 -- 1 IP address (1 host up) scanned in 67.56 seconds

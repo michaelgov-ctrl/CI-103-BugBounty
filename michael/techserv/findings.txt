@@ -1,0 +1,151 @@
+wordpress site
+
+wpscan output:
+
+_______________________________________________________________
+         __          _______   _____
+         \ \        / /  __ \ / ____|
+          \ \  /\  / /| |__) | (___   ___  __ _ _ __ ®
+           \ \/  \/ / |  ___/ \___ \ / __|/ _` | '_ \
+            \  /\  /  | |     ____) | (__| (_| | | | |
+             \/  \/   |_|    |_____/ \___|\__,_|_| |_|
+
+         WordPress Security Scanner by the WPScan Team
+                         Version 3.8.28
+       Sponsored by Automattic - https://automattic.com/
+       @_WPScan_, @ethicalhack3r, @erwan_lr, @firefart
+_______________________________________________________________
+
+[+] URL: https://www.techserv.drexel.edu/techserv/ [129.25.195.219]
+[+] Started: Thu Apr 10 22:21:40 2025
+
+Interesting Finding(s):
+
+[+] Headers
+ | Interesting Entry: server: Apache/2.4.62 (Debian)
+ | Found By: Headers (Passive Detection)
+ | Confidence: 100%
+
+[+] WordPress readme found: https://www.techserv.drexel.edu/techserv/readme.html
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+
+[+] The external WP-Cron seems to be enabled: https://www.techserv.drexel.edu/techserv/wp-cron.php
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 60%
+ | References:
+ |  - https://www.iplocation.net/defend-wordpress-from-ddos
+ |  - https://github.com/wpscanteam/wpscan/issues/1299
+
+[+] WordPress version 6.7.2 identified (Latest, released on 2025-02-11).
+ | Found By: Query Parameter In Install Page (Aggressive Detection)
+ |  - https://www.techserv.drexel.edu/techserv/wp-includes/css/dashicons.min.css?ver=6.7.2
+ |  - https://www.techserv.drexel.edu/techserv/wp-includes/css/buttons.min.css?ver=6.7.2
+ |  - https://www.techserv.drexel.edu/techserv/wp-admin/css/forms.min.css?ver=6.7.2
+ |  - https://www.techserv.drexel.edu/techserv/wp-admin/css/l10n.min.css?ver=6.7.2
+ |  - https://www.techserv.drexel.edu/techserv/wp-admin/css/install.min.css?ver=6.7.2
+
+[+] WordPress theme in use: twentytwenty
+ | Location: https://www.techserv.drexel.edu/techserv/wp-content/themes/twentytwenty/
+ | Latest Version: 2.8 (up to date)
+ | Last Updated: 2024-11-13T00:00:00.000Z
+ | Readme: https://www.techserv.drexel.edu/techserv/wp-content/themes/twentytwenty/readme.txt
+ | Style URL: https://www.techserv.drexel.edu/techserv/wp-content/themes/twentytwenty/style.css
+ | Style Name: Twenty Twenty
+ | Style URI: https://wordpress.org/themes/twentytwenty/
+ | Description: Our default theme for 2020 is designed to take full advantage of the flexibility of the block editor...
+ | Author: the WordPress team
+ | Author URI: https://wordpress.org/
+ |
+ | Found By: Css Style In Homepage (Passive Detection)
+ | Confirmed By: Css Style In 404 Page (Passive Detection)
+ |
+ | Version: 2.8 (80% confidence)
+ | Found By: Style (Passive Detection)
+ |  - https://www.techserv.drexel.edu/techserv/wp-content/themes/twentytwenty/style.css, Match: 'Version: 2.8'
+
+[+] Enumerating All Plugins (via Passive Methods)
+[+] Checking Plugin Versions (via Passive and Aggressive Methods)
+
+[i] Plugin(s) Identified:
+
+[+] all-in-one-favicon
+ | Location: https://www.techserv.drexel.edu/techserv/wp-content/plugins/all-in-one-favicon/
+ | Latest Version: 4.8 (up to date)
+ | Last Updated: 2023-08-08T02:27:00.000Z
+ |
+ | Found By: Comment (Passive Detection)
+ |
+ | Version: 4.8 (100% confidence)
+ | Found By: Comment (Passive Detection)
+ |  - https://www.techserv.drexel.edu/techserv/, Match: 'All in one Favicon 4.8'
+ | Confirmed By: Readme - Stable Tag (Aggressive Detection)
+ |  - https://www.techserv.drexel.edu/techserv/wp-content/plugins/all-in-one-favicon/readme.txt
+
+[+] contact-form-7
+ | Location: https://www.techserv.drexel.edu/techserv/wp-content/plugins/contact-form-7/
+ | Last Updated: 2025-04-10T06:47:00.000Z
+ | [!] The version is out of date, the latest version is 6.0.6
+ |
+ | Found By: Urls In Homepage (Passive Detection)
+ | Confirmed By: Urls In 404 Page (Passive Detection)
+ |
+ | Version: 6.0.5 (80% confidence)
+ | Found By: Readme - Stable Tag (Aggressive Detection)
+ |  - https://www.techserv.drexel.edu/techserv/wp-content/plugins/contact-form-7/readme.txt
+
+[+] data-storage
+ | Location: https://www.techserv.drexel.edu/techserv/wp-content/plugins/data-storage/
+ | Latest Version: 2.5.5 (up to date)
+ | Last Updated: 2016-04-22T17:20:00.000Z
+ |
+ | Found By: Urls In Homepage (Passive Detection)
+ | Confirmed By: Urls In 404 Page (Passive Detection)
+ |
+ | Version: 2.5.5 (80% confidence)
+ | Found By: Readme - Stable Tag (Aggressive Detection)
+ |  - https://www.techserv.drexel.edu/techserv/wp-content/plugins/data-storage/readme.txt
+
+[+] jetpack
+ | Location: https://www.techserv.drexel.edu/techserv/wp-content/plugins/jetpack/
+ | Last Updated: 2025-04-02T14:23:00.000Z
+ | [!] The version is out of date, the latest version is 14.5
+ |
+ | Found By: Urls In Homepage (Passive Detection)
+ | Confirmed By: Urls In 404 Page (Passive Detection)
+ |
+ | Version: 14.4.1 (100% confidence)
+ | Found By: Readme - Stable Tag (Aggressive Detection)
+ |  - https://www.techserv.drexel.edu/techserv/wp-content/plugins/jetpack/readme.txt
+ | Confirmed By: Change Log (Aggressive Detection)
+ |  - https://www.techserv.drexel.edu/techserv/wp-content/plugins/jetpack/CHANGELOG.md, Match: '## 14.4.1 -'
+
+[+] wp-security-hardening
+ | Location: https://www.techserv.drexel.edu/techserv/wp-content/plugins/wp-security-hardening/
+ | Latest Version: 1.2.8 (up to date)
+ | Last Updated: 2024-09-13T10:33:00.000Z
+ |
+ | Found By: Urls In Homepage (Passive Detection)
+ | Confirmed By: Urls In 404 Page (Passive Detection)
+ |
+ | Version: 1.2.8 (80% confidence)
+ | Found By: Readme - Stable Tag (Aggressive Detection)
+ |  - https://www.techserv.drexel.edu/techserv/wp-content/plugins/wp-security-hardening/readme.txt
+
+[+] Enumerating Config Backups (via Passive and Aggressive Methods)
+ Checking Config Backups - Time: 00:00:06 <===============================================================================================================> (137 / 137) 100.00% Time: 00:00:06
+
+[i] No Config Backups Found.
+
+[+] WPScan DB API OK
+ | Plan: free
+ | Requests Done (during the scan): 7
+ | Requests Remaining: 15
+
+[+] Finished: Thu Apr 10 22:21:58 2025
+[+] Requests Done: 197
+[+] Cached Requests: 6
+[+] Data Sent: 64.824 KB
+[+] Data Received: 1.328 MB
+[+] Memory used: 275.836 MB
+[+] Elapsed time: 00:00:17

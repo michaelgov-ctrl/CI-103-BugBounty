@@ -7,7 +7,7 @@ twentyfour.drexel.edu
 secureia.drexel.edu
 sacan.biomed.drexel.edu
 sacan.urcf.drexel.edu
-rush08.cci.drexel.edu/login
+rush08.cci.drexel.edu
 quad.cs.drexel.edu
 reccenter.drexel.edu
 id.cci.drexel.edu
