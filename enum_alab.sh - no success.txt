@@ -1,0 +1,48 @@
+#!/bin/bash
+
+DOMAIN="alab.physics.drexel.edu"
+WORDLIST="/usr/share/wordlists/dirb/common.txt"
+OUTPUT_DIR="scan_results_$DOMAIN"
+
+mkdir -p "$OUTPUT_DIR"
+cd "$OUTPUT_DIR" || exit
+
+echo "[*] Starting scan of $DOMAIN..."
+echo "[+] Step 1: Nmap scan (ports 22, 80, 443, vuln scan)"
+nmap -sS -sV -sC -p 22,80,443 --script vuln -oN nmap_scan.txt $DOMAIN
+
+echo "[+] Step 2: WhatWeb technology fingerprinting"
+whatweb http://$DOMAIN > whatweb_http.txt
+whatweb https://$DOMAIN > whatweb_https.txt
+
+echo "[+] Step 3: Nikto vulnerability scan"
+nikto -h http://$DOMAIN > nikto_http.txt
+nikto -h https://$DOMAIN > nikto_https.txt
+
+echo "[+] Step 4: Directory fuzzing with ffuf"
+ffuf -u http://$DOMAIN/FUZZ -w $WORDLIST -t 50 -o ffuf_http.txt
+ffuf -u https://$DOMAIN/FUZZ -w $WORDLIST -t 50 -o ffuf_https.txt
+
+echo "[+] Step 5: TLS/SSL scan"
+sslscan $DOMAIN > sslscan.txt
+
+echo "[+] Step 6: HTTP headers check"
+curl -I http://$DOMAIN > headers_http.txt
+curl -I https://$DOMAIN > headers_https.txt
+
+echo "[+] Step 7: Search for known vulnerabilities"
+searchsploit "OpenSSH 8.0" > exploits_openssh.txt
+searchsploit apache > exploits_apache.txt
+
+echo "[+] Step 8: SSH key and algorithm scan"
+nmap -p 22 --script ssh2-enum-algos,ssh-hostkey $DOMAIN -oN ssh_scan.txt
+
+echo "[+] Step 9: Web screenshot (if gowitness is installed)"
+if command -v gowitness &> /dev/null; then
+    gowitness single http://$DOMAIN
+    gowitness single https://$DOMAIN
+else
+    echo "[!] gowitness not found — skipping screenshot"
+fi
+
+echo "[✔] All scans completed. Results are saved in: $OUTPUT_DIR"
