@@ -1,0 +1,11 @@
+# Nmap 7.94SVN scan initiated Tue Apr 29 09:54:13 2025 as: nmap -p 22,80,443 -oN nmap_results/autodiscover_irttest_drexel_edu.txt autodiscover.irttest.drexel.edu
+Nmap scan report for autodiscover.irttest.drexel.edu (52.96.35.8)
+Host is up (0.022s latency).
+Other addresses for autodiscover.irttest.drexel.edu (not scanned): 52.96.43.168 52.96.122.56 52.96.186.168 2603:1036:302:4830::8 2603:1036:302:415d::8 2603:1036:207:45a::8 2603:1036:302:40d0::8 2603:1036:302:4845::8 2603:1036:302:4836::8 2603:1036:302:4155::8 2603:1036:302:4157::8
+
+PORT    STATE    SERVICE
+22/tcp  filtered ssh
+80/tcp  open     http
+443/tcp closed   https
+
+# Nmap done at Tue Apr 29 09:54:15 2025 -- 1 IP address (1 host up) scanned in 2.40 seconds

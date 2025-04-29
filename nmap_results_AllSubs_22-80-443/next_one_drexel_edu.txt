@@ -1,0 +1,11 @@
+# Nmap 7.94SVN scan initiated Tue Apr 29 10:07:19 2025 as: nmap -p 22,80,443 -oN nmap_results/next_one_drexel_edu.txt next.one.drexel.edu
+Nmap scan report for next.one.drexel.edu (144.118.67.19)
+Host is up (0.022s latency).
+rDNS record for 144.118.67.19: one.drexel.edu
+
+PORT    STATE  SERVICE
+22/tcp  closed ssh
+80/tcp  open   http
+443/tcp open   https
+
+# Nmap done at Tue Apr 29 10:07:19 2025 -- 1 IP address (1 host up) scanned in 0.19 seconds

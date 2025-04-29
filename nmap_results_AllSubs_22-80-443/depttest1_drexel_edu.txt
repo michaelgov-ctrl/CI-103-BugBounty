@@ -1,0 +1,4 @@
+# Nmap 7.94SVN scan initiated Tue Apr 29 09:59:15 2025 as: nmap -p 22,80,443 -oN nmap_results/depttest1_drexel_edu.txt depttest1.drexel.edu
+Failed to resolve "depttest1.drexel.edu".
+WARNING: No targets were specified, so 0 hosts scanned.
+# Nmap done at Tue Apr 29 09:59:16 2025 -- 0 IP addresses (0 hosts up) scanned in 0.13 seconds

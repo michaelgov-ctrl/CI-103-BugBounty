@@ -1,0 +1,2 @@
+# Nmap 7.94SVN scan initiated Tue Apr 29 09:54:46 2025 as: nmap -p 22,80,443 -oN nmap_results/biokids_soe_drexel_edu.txt biokids.soe.drexel.edu
+# Nmap done at Tue Apr 29 09:54:49 2025 -- 1 IP address (0 hosts up) scanned in 3.12 seconds

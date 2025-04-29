@@ -1,0 +1,4 @@
+# Nmap 7.94SVN scan initiated Tue Apr 29 09:54:20 2025 as: nmap -p 22,80,443 -oN nmap_results/banner2nolijbutton_drexel_edu.txt banner2nolijbutton.drexel.edu
+Failed to resolve "banner2nolijbutton.drexel.edu".
+WARNING: No targets were specified, so 0 hosts scanned.
+# Nmap done at Tue Apr 29 09:54:20 2025 -- 0 IP addresses (0 hosts up) scanned in 0.10 seconds

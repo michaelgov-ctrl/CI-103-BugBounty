@@ -1,0 +1,10 @@
+# Nmap 7.94SVN scan initiated Tue Apr 29 10:00:05 2025 as: nmap -p 22,80,443 -oN nmap_results/duhep2_physics_drexel_edu.txt duhep2.physics.drexel.edu
+Nmap scan report for duhep2.physics.drexel.edu (129.25.7.17)
+Host is up (0.030s latency).
+
+PORT    STATE SERVICE
+22/tcp  open  ssh
+80/tcp  open  http
+443/tcp open  https
+
+# Nmap done at Tue Apr 29 10:00:05 2025 -- 1 IP address (1 host up) scanned in 0.22 seconds

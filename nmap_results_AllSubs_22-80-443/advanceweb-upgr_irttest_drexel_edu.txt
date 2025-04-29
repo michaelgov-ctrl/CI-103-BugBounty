@@ -1,0 +1,11 @@
+# Nmap 7.94SVN scan initiated Tue Apr 29 09:53:17 2025 as: nmap -p 22,80,443 -oN nmap_results/advanceweb-upgr_irttest_drexel_edu.txt advanceweb-upgr.irttest.drexel.edu
+Nmap scan report for advanceweb-upgr.irttest.drexel.edu (144.118.66.226)
+Host is up (0.021s latency).
+rDNS record for 144.118.66.226: advanceweb.irttest.drexel.edu
+
+PORT    STATE  SERVICE
+22/tcp  closed ssh
+80/tcp  open   http
+443/tcp open   https
+
+# Nmap done at Tue Apr 29 09:53:17 2025 -- 1 IP address (1 host up) scanned in 0.15 seconds

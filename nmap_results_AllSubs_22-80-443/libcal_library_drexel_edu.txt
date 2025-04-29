@@ -1,0 +1,12 @@
+# Nmap 7.94SVN scan initiated Tue Apr 29 10:05:35 2025 as: nmap -p 22,80,443 -oN nmap_results/libcal_library_drexel_edu.txt libcal.library.drexel.edu
+Nmap scan report for libcal.library.drexel.edu (54.82.201.33)
+Host is up (0.034s latency).
+Other addresses for libcal.library.drexel.edu (not scanned): 18.214.47.102 18.235.213.250 18.213.162.18
+rDNS record for 54.82.201.33: ec2-54-82-201-33.compute-1.amazonaws.com
+
+PORT    STATE    SERVICE
+22/tcp  filtered ssh
+80/tcp  open     http
+443/tcp open     https
+
+# Nmap done at Tue Apr 29 10:05:37 2025 -- 1 IP address (1 host up) scanned in 1.72 seconds

@@ -1,0 +1,12 @@
+# Nmap 7.94SVN scan initiated Tue Apr 29 10:13:07 2025 as: nmap -p 22,80,443 -oN nmap_results/www_twentyfour_drexel_edu.txt www.twentyfour.drexel.edu
+Nmap scan report for www.twentyfour.drexel.edu (142.250.65.243)
+Host is up (0.024s latency).
+Other addresses for www.twentyfour.drexel.edu (not scanned): 2607:f8b0:4006:81f::2013
+rDNS record for 142.250.65.243: lga25s73-in-f19.1e100.net
+
+PORT    STATE    SERVICE
+22/tcp  filtered ssh
+80/tcp  open     http
+443/tcp open     https
+
+# Nmap done at Tue Apr 29 10:13:08 2025 -- 1 IP address (1 host up) scanned in 1.35 seconds

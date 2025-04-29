@@ -1,0 +1,11 @@
+# Nmap 7.94SVN scan initiated Tue Apr 29 09:54:25 2025 as: nmap -p 22,80,443 -oN nmap_results/bioimage_coe_drexel_edu.txt bioimage.coe.drexel.edu
+Nmap scan report for bioimage.coe.drexel.edu (144.118.78.21)
+Host is up (0.019s latency).
+rDNS record for 144.118.78.21: biovx1.urcf.drexel.edu
+
+PORT    STATE    SERVICE
+22/tcp  filtered ssh
+80/tcp  open     http
+443/tcp open     https
+
+# Nmap done at Tue Apr 29 09:54:26 2025 -- 1 IP address (1 host up) scanned in 1.38 seconds

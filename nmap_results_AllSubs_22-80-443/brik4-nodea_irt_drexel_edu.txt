@@ -1,0 +1,2 @@
+# Nmap 7.94SVN scan initiated Tue Apr 29 09:55:36 2025 as: nmap -p 22,80,443 -oN nmap_results/brik4-nodea_irt_drexel_edu.txt brik4-nodea.irt.drexel.edu
+# Nmap done at Tue Apr 29 09:55:39 2025 -- 1 IP address (0 hosts up) scanned in 3.12 seconds

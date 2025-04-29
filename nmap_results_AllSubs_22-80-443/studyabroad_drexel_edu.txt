@@ -1,0 +1,12 @@
+# Nmap 7.94SVN scan initiated Tue Apr 29 10:11:02 2025 as: nmap -p 22,80,443 -oN nmap_results/studyabroad_drexel_edu.txt studyabroad.drexel.edu
+Nmap scan report for studyabroad.drexel.edu (52.7.124.42)
+Host is up (0.026s latency).
+Other addresses for studyabroad.drexel.edu (not scanned): 52.54.205.26 3.223.102.20
+rDNS record for 52.7.124.42: ec2-52-7-124-42.compute-1.amazonaws.com
+
+PORT    STATE    SERVICE
+22/tcp  filtered ssh
+80/tcp  open     http
+443/tcp open     https
+
+# Nmap done at Tue Apr 29 10:11:04 2025 -- 1 IP address (1 host up) scanned in 1.74 seconds

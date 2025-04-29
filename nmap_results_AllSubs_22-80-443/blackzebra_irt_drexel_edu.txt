@@ -1,0 +1,11 @@
+# Nmap 7.94SVN scan initiated Tue Apr 29 09:54:55 2025 as: nmap -p 22,80,443 -oN nmap_results/blackzebra_irt_drexel_edu.txt blackzebra.irt.drexel.edu
+Nmap scan report for blackzebra.irt.drexel.edu (144.118.39.16)
+Host is up (0.017s latency).
+rDNS record for 144.118.39.16: www2.drexelmed.edu
+
+PORT    STATE    SERVICE
+22/tcp  filtered ssh
+80/tcp  open     http
+443/tcp open     https
+
+# Nmap done at Tue Apr 29 09:54:57 2025 -- 1 IP address (1 host up) scanned in 1.46 seconds

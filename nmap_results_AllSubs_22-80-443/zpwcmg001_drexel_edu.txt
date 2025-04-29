@@ -1,0 +1,10 @@
+# Nmap 7.94SVN scan initiated Tue Apr 29 10:13:30 2025 as: nmap -p 22,80,443 -oN nmap_results/zpwcmg001_drexel_edu.txt zpwcmg001.drexel.edu
+Nmap scan report for zpwcmg001.drexel.edu (20.85.156.167)
+Host is up (0.028s latency).
+
+PORT    STATE    SERVICE
+22/tcp  filtered ssh
+80/tcp  filtered http
+443/tcp open     https
+
+# Nmap done at Tue Apr 29 10:13:32 2025 -- 1 IP address (1 host up) scanned in 2.44 seconds

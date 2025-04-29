@@ -1,0 +1,2 @@
+# Nmap 7.94SVN scan initiated Tue Apr 29 10:05:45 2025 as: nmap -p 22,80,443 -oN nmap_results/libwiki2_library_drexel_edu.txt libwiki2.library.drexel.edu
+# Nmap done at Tue Apr 29 10:05:48 2025 -- 1 IP address (0 hosts up) scanned in 3.16 seconds

@@ -1,0 +1,10 @@
+# Nmap 7.94SVN scan initiated Tue Apr 29 10:03:49 2025 as: nmap -p 22,80,443 -oN nmap_results/jenkins_irt_drexel_edu.txt jenkins.irt.drexel.edu
+Nmap scan report for jenkins.irt.drexel.edu (144.118.66.229)
+Host is up (0.023s latency).
+
+PORT    STATE  SERVICE
+22/tcp  closed ssh
+80/tcp  open   http
+443/tcp open   https
+
+# Nmap done at Tue Apr 29 10:03:49 2025 -- 1 IP address (1 host up) scanned in 0.20 seconds

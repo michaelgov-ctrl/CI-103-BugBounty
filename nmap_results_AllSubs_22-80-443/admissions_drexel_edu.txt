@@ -1,0 +1,11 @@
+# Nmap 7.94SVN scan initiated Tue Apr 29 09:53:15 2025 as: nmap -p 22,80,443 -oN nmap_results/admissions_drexel_edu.txt admissions.drexel.edu
+Nmap scan report for admissions.drexel.edu (34.198.122.35)
+Host is up (0.034s latency).
+rDNS record for 34.198.122.35: ec2-34-198-122-35.compute-1.amazonaws.com
+
+PORT    STATE    SERVICE
+22/tcp  filtered ssh
+80/tcp  open     http
+443/tcp open     https
+
+# Nmap done at Tue Apr 29 09:53:17 2025 -- 1 IP address (1 host up) scanned in 1.50 seconds

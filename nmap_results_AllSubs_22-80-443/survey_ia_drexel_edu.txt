@@ -1,0 +1,11 @@
+# Nmap 7.94SVN scan initiated Tue Apr 29 10:11:08 2025 as: nmap -p 22,80,443 -oN nmap_results/survey_ia_drexel_edu.txt survey.ia.drexel.edu
+Nmap scan report for survey.ia.drexel.edu (34.74.7.102)
+Host is up (0.035s latency).
+rDNS record for 34.74.7.102: 102.7.74.34.bc.googleusercontent.com
+
+PORT    STATE    SERVICE
+22/tcp  filtered ssh
+80/tcp  open     http
+443/tcp open     https
+
+# Nmap done at Tue Apr 29 10:11:09 2025 -- 1 IP address (1 host up) scanned in 1.47 seconds

@@ -1,0 +1,4 @@
+# Nmap 7.94SVN scan initiated Tue Apr 29 10:11:40 2025 as: nmap -p 22,80,443 -oN nmap_results/view_drexel_edu.txt view.drexel.edu
+Failed to resolve "view.drexel.edu".
+WARNING: No targets were specified, so 0 hosts scanned.
+# Nmap done at Tue Apr 29 10:11:40 2025 -- 0 IP addresses (0 hosts up) scanned in 0.15 seconds

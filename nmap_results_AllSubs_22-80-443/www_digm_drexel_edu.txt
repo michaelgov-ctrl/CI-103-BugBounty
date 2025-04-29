@@ -1,0 +1,11 @@
+# Nmap 7.94SVN scan initiated Tue Apr 29 10:12:47 2025 as: nmap -p 22,80,443 -oN nmap_results/www_digm_drexel_edu.txt www.digm.drexel.edu
+Nmap scan report for www.digm.drexel.edu (162.214.193.42)
+Host is up (0.074s latency).
+rDNS record for 162.214.193.42: server.fdd.tuz.mybluehost.me
+
+PORT    STATE SERVICE
+22/tcp  open  ssh
+80/tcp  open  http
+443/tcp open  https
+
+# Nmap done at Tue Apr 29 10:12:48 2025 -- 1 IP address (1 host up) scanned in 0.28 seconds

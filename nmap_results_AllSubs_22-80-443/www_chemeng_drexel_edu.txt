@@ -1,0 +1,11 @@
+# Nmap 7.94SVN scan initiated Tue Apr 29 10:12:44 2025 as: nmap -p 22,80,443 -oN nmap_results/www_chemeng_drexel_edu.txt www.chemeng.drexel.edu
+Nmap scan report for www.chemeng.drexel.edu (129.25.59.19)
+Host is up (0.020s latency).
+rDNS record for 129.25.59.19: mail.coe.drexel.edu
+
+PORT    STATE    SERVICE
+22/tcp  filtered ssh
+80/tcp  open     http
+443/tcp open     https
+
+# Nmap done at Tue Apr 29 10:12:45 2025 -- 1 IP address (1 host up) scanned in 1.35 seconds

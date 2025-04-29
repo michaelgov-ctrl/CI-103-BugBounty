@@ -1,0 +1,11 @@
+# Nmap 7.94SVN scan initiated Tue Apr 29 09:56:39 2025 as: nmap -p 22,80,443 -oN nmap_results/cloud047_cci_drexel_edu.txt cloud047.cci.drexel.edu
+Nmap scan report for cloud047.cci.drexel.edu (129.25.202.147)
+Host is up (0.015s latency).
+rDNS record for 129.25.202.147: rack94.cs.drexel.edu
+
+PORT    STATE    SERVICE
+22/tcp  filtered ssh
+80/tcp  open     http
+443/tcp open     https
+
+# Nmap done at Tue Apr 29 09:56:40 2025 -- 1 IP address (1 host up) scanned in 1.36 seconds

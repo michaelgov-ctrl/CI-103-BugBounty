@@ -1,0 +1,11 @@
+# Nmap 7.94SVN scan initiated Tue Apr 29 10:03:09 2025 as: nmap -p 22,80,443 -oN nmap_results/idm-api-t_irt_drexel_edu.txt idm-api-t.irt.drexel.edu
+Nmap scan report for idm-api-t.irt.drexel.edu (144.118.66.232)
+Host is up (0.022s latency).
+rDNS record for 144.118.66.232: accounts-t.irt.drexel.edu
+
+PORT    STATE  SERVICE
+22/tcp  closed ssh
+80/tcp  open   http
+443/tcp open   https
+
+# Nmap done at Tue Apr 29 10:03:09 2025 -- 1 IP address (1 host up) scanned in 0.17 seconds

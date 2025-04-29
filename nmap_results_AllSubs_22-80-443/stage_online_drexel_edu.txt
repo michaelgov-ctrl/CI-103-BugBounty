@@ -1,0 +1,11 @@
+# Nmap 7.94SVN scan initiated Tue Apr 29 10:10:50 2025 as: nmap -p 22,80,443 -oN nmap_results/stage_online_drexel_edu.txt stage.online.drexel.edu
+Nmap scan report for stage.online.drexel.edu (104.18.36.33)
+Host is up (0.022s latency).
+Other addresses for stage.online.drexel.edu (not scanned): 172.64.151.223 2606:4700:4400::ac40:97df 2606:4700:4400::6812:2421
+
+PORT    STATE    SERVICE
+22/tcp  filtered ssh
+80/tcp  open     http
+443/tcp open     https
+
+# Nmap done at Tue Apr 29 10:10:52 2025 -- 1 IP address (1 host up) scanned in 2.47 seconds

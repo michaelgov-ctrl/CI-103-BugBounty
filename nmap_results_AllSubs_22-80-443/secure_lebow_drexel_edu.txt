@@ -1,0 +1,11 @@
+# Nmap 7.94SVN scan initiated Tue Apr 29 10:09:45 2025 as: nmap -p 22,80,443 -oN nmap_results/secure_lebow_drexel_edu.txt secure.lebow.drexel.edu
+Nmap scan report for secure.lebow.drexel.edu (129.25.235.118)
+Host is up (0.024s latency).
+rDNS record for 129.25.235.118: lcbwww.lebow.drexel.edu
+
+PORT    STATE    SERVICE
+22/tcp  filtered ssh
+80/tcp  open     http
+443/tcp open     https
+
+# Nmap done at Tue Apr 29 10:09:47 2025 -- 1 IP address (1 host up) scanned in 1.38 seconds

@@ -1,0 +1,12 @@
+# Nmap 7.94SVN scan initiated Tue Apr 29 09:56:04 2025 as: nmap -p 22,80,443 -oN nmap_results/careers_drexel_edu.txt careers.drexel.edu
+Nmap scan report for careers.drexel.edu (65.8.19.70)
+Host is up (0.040s latency).
+Other addresses for careers.drexel.edu (not scanned): 65.8.19.110 65.8.19.95 65.8.19.16 2600:9000:2105:3000:1e:60af:1cc0:93a1 2600:9000:2105:f600:1e:60af:1cc0:93a1 2600:9000:2105:4e00:1e:60af:1cc0:93a1 2600:9000:2105:4600:1e:60af:1cc0:93a1 2600:9000:2105:1800:1e:60af:1cc0:93a1 2600:9000:2105:8e00:1e:60af:1cc0:93a1 2600:9000:2105:1600:1e:60af:1cc0:93a1 2600:9000:2105:c400:1e:60af:1cc0:93a1
+rDNS record for 65.8.19.70: server-65-8-19-70.bos50.r.cloudfront.net
+
+PORT    STATE    SERVICE
+22/tcp  filtered ssh
+80/tcp  open     http
+443/tcp open     https
+
+# Nmap done at Tue Apr 29 09:56:06 2025 -- 1 IP address (1 host up) scanned in 1.86 seconds

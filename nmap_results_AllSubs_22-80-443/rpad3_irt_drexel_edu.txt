@@ -1,0 +1,4 @@
+# Nmap 7.94SVN scan initiated Tue Apr 29 10:09:25 2025 as: nmap -p 22,80,443 -oN nmap_results/rpad3_irt_drexel_edu.txt rpad3.irt.drexel.edu
+Failed to resolve "rpad3.irt.drexel.edu".
+WARNING: No targets were specified, so 0 hosts scanned.
+# Nmap done at Tue Apr 29 10:09:25 2025 -- 0 IP addresses (0 hosts up) scanned in 0.09 seconds

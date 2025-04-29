@@ -1,0 +1,11 @@
+# Nmap 7.94SVN scan initiated Tue Apr 29 10:09:47 2025 as: nmap -p 22,80,443 -oN nmap_results/secureia_drexel_edu.txt secureia.drexel.edu
+Nmap scan report for secureia.drexel.edu (104.18.125.47)
+Host is up (0.028s latency).
+Other addresses for secureia.drexel.edu (not scanned): 104.18.123.47 104.18.126.47 104.18.124.47 104.18.122.47 2606:4700::6812:7b2f 2606:4700::6812:7c2f 2606:4700::6812:7a2f 2606:4700::6812:7d2f 2606:4700::6812:7e2f
+
+PORT    STATE    SERVICE
+22/tcp  filtered ssh
+80/tcp  open     http
+443/tcp open     https
+
+# Nmap done at Tue Apr 29 10:09:49 2025 -- 1 IP address (1 host up) scanned in 2.39 seconds

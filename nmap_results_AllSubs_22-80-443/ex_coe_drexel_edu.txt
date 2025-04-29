@@ -1,0 +1,2 @@
+# Nmap 7.94SVN scan initiated Tue Apr 29 10:00:50 2025 as: nmap -p 22,80,443 -oN nmap_results/ex_coe_drexel_edu.txt ex.coe.drexel.edu
+# Nmap done at Tue Apr 29 10:00:53 2025 -- 1 IP address (0 hosts up) scanned in 3.13 seconds

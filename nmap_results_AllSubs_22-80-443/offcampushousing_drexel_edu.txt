@@ -1,0 +1,12 @@
+# Nmap 7.94SVN scan initiated Tue Apr 29 10:07:28 2025 as: nmap -p 22,80,443 -oN nmap_results/offcampushousing_drexel_edu.txt offcampushousing.drexel.edu
+Nmap scan report for offcampushousing.drexel.edu (23.45.233.169)
+Host is up (0.034s latency).
+Other addresses for offcampushousing.drexel.edu (not scanned): 23.45.233.173
+rDNS record for 23.45.233.169: a23-45-233-169.deploy.static.akamaitechnologies.com
+
+PORT    STATE    SERVICE
+22/tcp  filtered ssh
+80/tcp  open     http
+443/tcp open     https
+
+# Nmap done at Tue Apr 29 10:07:30 2025 -- 1 IP address (1 host up) scanned in 1.67 seconds

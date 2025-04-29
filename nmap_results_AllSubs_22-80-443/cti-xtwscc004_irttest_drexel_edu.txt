@@ -1,0 +1,10 @@
+# Nmap 7.94SVN scan initiated Tue Apr 29 09:58:57 2025 as: nmap -p 22,80,443 -oN nmap_results/cti-xtwscc004_irttest_drexel_edu.txt cti-xtwscc004.irttest.drexel.edu
+Nmap scan report for cti-xtwscc004.irttest.drexel.edu (144.118.32.22)
+Host is up (0.019s latency).
+
+PORT    STATE    SERVICE
+22/tcp  filtered ssh
+80/tcp  open     http
+443/tcp filtered https
+
+# Nmap done at Tue Apr 29 09:58:58 2025 -- 1 IP address (1 host up) scanned in 1.36 seconds

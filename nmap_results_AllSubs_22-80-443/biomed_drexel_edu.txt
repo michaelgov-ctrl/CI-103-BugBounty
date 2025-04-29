@@ -1,0 +1,10 @@
+# Nmap 7.94SVN scan initiated Tue Apr 29 09:54:49 2025 as: nmap -p 22,80,443 -oN nmap_results/biomed_drexel_edu.txt biomed.drexel.edu
+Nmap scan report for biomed.drexel.edu (52.170.7.25)
+Host is up (0.025s latency).
+
+PORT    STATE    SERVICE
+22/tcp  filtered ssh
+80/tcp  open     http
+443/tcp open     https
+
+# Nmap done at Tue Apr 29 09:54:52 2025 -- 1 IP address (1 host up) scanned in 2.40 seconds

@@ -1,0 +1,2 @@
+# Nmap 7.94SVN scan initiated Tue Apr 29 09:57:21 2025 as: nmap -p 22,80,443 -oN nmap_results/coreapp1_drexel_edu.txt coreapp1.drexel.edu
+# Nmap done at Tue Apr 29 09:57:24 2025 -- 1 IP address (0 hosts up) scanned in 3.20 seconds

@@ -1,0 +1,11 @@
+# Nmap 7.94SVN scan initiated Tue Apr 29 10:12:53 2025 as: nmap -p 22,80,443 -oN nmap_results/www_law_drexel_edu.txt www.law.drexel.edu
+Nmap scan report for www.law.drexel.edu (104.18.34.21)
+Host is up (0.022s latency).
+Other addresses for www.law.drexel.edu (not scanned): 172.64.153.235
+
+PORT    STATE    SERVICE
+22/tcp  filtered ssh
+80/tcp  open     http
+443/tcp open     https
+
+# Nmap done at Tue Apr 29 10:12:55 2025 -- 1 IP address (1 host up) scanned in 2.38 seconds

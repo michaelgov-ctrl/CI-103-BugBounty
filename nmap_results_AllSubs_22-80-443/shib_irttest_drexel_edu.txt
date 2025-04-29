@@ -1,0 +1,10 @@
+# Nmap 7.94SVN scan initiated Tue Apr 29 10:09:56 2025 as: nmap -p 22,80,443 -oN nmap_results/shib_irttest_drexel_edu.txt shib.irttest.drexel.edu
+Nmap scan report for shib.irttest.drexel.edu (144.118.67.8)
+Host is up (0.022s latency).
+
+PORT    STATE  SERVICE
+22/tcp  closed ssh
+80/tcp  open   http
+443/tcp open   https
+
+# Nmap done at Tue Apr 29 10:09:57 2025 -- 1 IP address (1 host up) scanned in 0.17 seconds

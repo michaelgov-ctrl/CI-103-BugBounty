@@ -1,0 +1,10 @@
+# Nmap 7.94SVN scan initiated Tue Apr 29 10:03:20 2025 as: nmap -p 22,80,443 -oN nmap_results/ilab4_physics_drexel_edu.txt ilab4.physics.drexel.edu
+Nmap scan report for ilab4.physics.drexel.edu (129.25.7.214)
+Host is up (0.019s latency).
+
+PORT    STATE SERVICE
+22/tcp  open  ssh
+80/tcp  open  http
+443/tcp open  https
+
+# Nmap done at Tue Apr 29 10:03:20 2025 -- 1 IP address (1 host up) scanned in 0.20 seconds

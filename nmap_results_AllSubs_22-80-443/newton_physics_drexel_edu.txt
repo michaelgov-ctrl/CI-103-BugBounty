@@ -1,0 +1,10 @@
+# Nmap 7.94SVN scan initiated Tue Apr 29 10:07:15 2025 as: nmap -p 22,80,443 -oN nmap_results/newton_physics_drexel_edu.txt newton.physics.drexel.edu
+Nmap scan report for newton.physics.drexel.edu (129.25.7.21)
+Host is up (0.027s latency).
+
+PORT    STATE  SERVICE
+22/tcp  open   ssh
+80/tcp  closed http
+443/tcp closed https
+
+# Nmap done at Tue Apr 29 10:07:16 2025 -- 1 IP address (1 host up) scanned in 0.26 seconds

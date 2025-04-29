@@ -1,0 +1,4 @@
+# Nmap 7.94SVN scan initiated Tue Apr 29 10:03:57 2025 as: nmap -p 22,80,443 -oN nmap_results/kbootstrap_westphal_drexel_edu.txt kbootstrap.westphal.drexel.edu
+Failed to resolve "kbootstrap.westphal.drexel.edu".
+WARNING: No targets were specified, so 0 hosts scanned.
+# Nmap done at Tue Apr 29 10:03:57 2025 -- 0 IP addresses (0 hosts up) scanned in 0.10 seconds

@@ -1,0 +1,11 @@
+# Nmap 7.94SVN scan initiated Tue Apr 29 10:13:02 2025 as: nmap -p 22,80,443 -oN nmap_results/www_online_drexel_edu.txt www.online.drexel.edu
+Nmap scan report for www.online.drexel.edu (172.64.151.25)
+Host is up (0.021s latency).
+Other addresses for www.online.drexel.edu (not scanned): 104.18.36.231 2606:4700:4400::6812:24e7 2606:4700:4400::ac40:9719
+
+PORT    STATE    SERVICE
+22/tcp  filtered ssh
+80/tcp  open     http
+443/tcp open     https
+
+# Nmap done at Tue Apr 29 10:13:04 2025 -- 1 IP address (1 host up) scanned in 2.53 seconds

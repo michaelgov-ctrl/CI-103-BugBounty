@@ -1,0 +1,11 @@
+# Nmap 7.94SVN scan initiated Tue Apr 29 10:07:25 2025 as: nmap -p 22,80,443 -oN nmap_results/nts_drexel_edu.txt nts.drexel.edu
+Nmap scan report for nts.drexel.edu (104.16.87.74)
+Host is up (0.027s latency).
+Other addresses for nts.drexel.edu (not scanned): 104.17.177.81 2606:4700::6810:574a 2606:4700::6811:b151
+
+PORT    STATE    SERVICE
+22/tcp  filtered ssh
+80/tcp  open     http
+443/tcp open     https
+
+# Nmap done at Tue Apr 29 10:07:28 2025 -- 1 IP address (1 host up) scanned in 2.42 seconds

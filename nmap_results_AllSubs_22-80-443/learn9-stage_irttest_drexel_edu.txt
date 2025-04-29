@@ -1,0 +1,12 @@
+# Nmap 7.94SVN scan initiated Tue Apr 29 10:05:21 2025 as: nmap -p 22,80,443 -oN nmap_results/learn9-stage_irttest_drexel_edu.txt learn9-stage.irttest.drexel.edu
+Nmap scan report for learn9-stage.irttest.drexel.edu (54.163.91.18)
+Host is up (0.38s latency).
+Other addresses for learn9-stage.irttest.drexel.edu (not scanned): 54.92.213.6
+rDNS record for 54.163.91.18: ec2-54-163-91-18.compute-1.amazonaws.com
+
+PORT    STATE    SERVICE
+22/tcp  filtered ssh
+80/tcp  open     http
+443/tcp open     https
+
+# Nmap done at Tue Apr 29 10:05:27 2025 -- 1 IP address (1 host up) scanned in 6.20 seconds

@@ -1,0 +1,11 @@
+# Nmap 7.94SVN scan initiated Tue Apr 29 10:07:19 2025 as: nmap -p 22,80,443 -oN nmap_results/nextcatalog_drexel_edu.txt nextcatalog.drexel.edu
+Nmap scan report for nextcatalog.drexel.edu (12.2.169.189)
+Host is up (0.049s latency).
+rDNS record for 12.2.169.189: drexel-next.courseleaf.com
+
+PORT    STATE    SERVICE
+22/tcp  filtered ssh
+80/tcp  open     http
+443/tcp open     https
+
+# Nmap done at Tue Apr 29 10:07:20 2025 -- 1 IP address (1 host up) scanned in 0.51 seconds

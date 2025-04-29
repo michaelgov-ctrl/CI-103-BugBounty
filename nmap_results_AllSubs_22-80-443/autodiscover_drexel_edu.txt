@@ -1,0 +1,11 @@
+# Nmap 7.94SVN scan initiated Tue Apr 29 09:54:10 2025 as: nmap -p 22,80,443 -oN nmap_results/autodiscover_drexel_edu.txt autodiscover.drexel.edu
+Nmap scan report for autodiscover.drexel.edu (40.104.47.104)
+Host is up (0.024s latency).
+Other addresses for autodiscover.drexel.edu (not scanned): 52.96.15.8 52.96.64.136 52.96.69.56 52.96.87.232 52.96.109.184 52.96.109.200 52.96.111.88 2603:1036:303:3c18::8 2603:1036:207:45c::8 2603:1036:207:457::8 2603:1036:302:481e::8
+
+PORT    STATE    SERVICE
+22/tcp  filtered ssh
+80/tcp  open     http
+443/tcp closed   https
+
+# Nmap done at Tue Apr 29 09:54:13 2025 -- 1 IP address (1 host up) scanned in 2.39 seconds

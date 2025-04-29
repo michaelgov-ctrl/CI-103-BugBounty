@@ -1,0 +1,10 @@
+# Nmap 7.94SVN scan initiated Tue Apr 29 10:02:45 2025 as: nmap -p 22,80,443 -oN nmap_results/icereport_irttest_drexel_edu.txt icereport.irttest.drexel.edu
+Nmap scan report for icereport.irttest.drexel.edu (144.118.67.128)
+Host is up (0.023s latency).
+
+PORT    STATE  SERVICE
+22/tcp  closed ssh
+80/tcp  open   http
+443/tcp open   https
+
+# Nmap done at Tue Apr 29 10:02:45 2025 -- 1 IP address (1 host up) scanned in 0.22 seconds

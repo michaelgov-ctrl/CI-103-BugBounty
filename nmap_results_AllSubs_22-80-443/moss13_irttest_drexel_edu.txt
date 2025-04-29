@@ -1,0 +1,4 @@
+# Nmap 7.94SVN scan initiated Tue Apr 29 10:06:47 2025 as: nmap -p 22,80,443 -oN nmap_results/moss13_irttest_drexel_edu.txt moss13.irttest.drexel.edu
+Failed to resolve "moss13.irttest.drexel.edu".
+WARNING: No targets were specified, so 0 hosts scanned.
+# Nmap done at Tue Apr 29 10:06:47 2025 -- 0 IP addresses (0 hosts up) scanned in 0.17 seconds

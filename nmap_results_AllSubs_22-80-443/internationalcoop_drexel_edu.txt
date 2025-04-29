@@ -1,0 +1,12 @@
+# Nmap 7.94SVN scan initiated Tue Apr 29 10:03:32 2025 as: nmap -p 22,80,443 -oN nmap_results/internationalcoop_drexel_edu.txt internationalcoop.drexel.edu
+Nmap scan report for internationalcoop.drexel.edu (3.223.102.20)
+Host is up (0.026s latency).
+Other addresses for internationalcoop.drexel.edu (not scanned): 52.7.124.42 52.54.205.26
+rDNS record for 3.223.102.20: ec2-3-223-102-20.compute-1.amazonaws.com
+
+PORT    STATE    SERVICE
+22/tcp  filtered ssh
+80/tcp  open     http
+443/tcp open     https
+
+# Nmap done at Tue Apr 29 10:03:33 2025 -- 1 IP address (1 host up) scanned in 1.67 seconds

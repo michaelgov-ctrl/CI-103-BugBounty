@@ -1,0 +1,12 @@
+# Nmap 7.94SVN scan initiated Tue Apr 29 10:06:11 2025 as: nmap -p 22,80,443 -oN nmap_results/macmgmt_irt_drexel_edu.txt macmgmt.irt.drexel.edu
+Nmap scan report for macmgmt.irt.drexel.edu (44.224.121.91)
+Host is up (0.079s latency).
+Other addresses for macmgmt.irt.drexel.edu (not scanned): 54.148.209.47 44.239.243.157
+rDNS record for 44.224.121.91: ec2-44-224-121-91.us-west-2.compute.amazonaws.com
+
+PORT    STATE    SERVICE
+22/tcp  filtered ssh
+80/tcp  closed   http
+443/tcp open     https
+
+# Nmap done at Tue Apr 29 10:06:13 2025 -- 1 IP address (1 host up) scanned in 1.79 seconds

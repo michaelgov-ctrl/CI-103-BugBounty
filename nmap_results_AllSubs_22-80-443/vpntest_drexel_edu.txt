@@ -1,0 +1,11 @@
+# Nmap 7.94SVN scan initiated Tue Apr 29 10:11:50 2025 as: nmap -p 22,80,443 -oN nmap_results/vpntest_drexel_edu.txt vpntest.drexel.edu
+Nmap scan report for vpntest.drexel.edu (144.118.1.195)
+Host is up (0.016s latency).
+rDNS record for 144.118.1.195: vpntest.noc.drexel.edu
+
+PORT    STATE    SERVICE
+22/tcp  filtered ssh
+80/tcp  filtered http
+443/tcp open     https
+
+# Nmap done at Tue Apr 29 10:11:52 2025 -- 1 IP address (1 host up) scanned in 1.36 seconds

@@ -1,0 +1,12 @@
+# Nmap 7.94SVN scan initiated Tue Apr 29 10:05:28 2025 as: nmap -p 22,80,443 -oN nmap_results/learning_drexel_edu.txt learning.drexel.edu
+Nmap scan report for learning.drexel.edu (54.167.7.110)
+Host is up (0.026s latency).
+Other addresses for learning.drexel.edu (not scanned): 52.205.67.170 3.215.209.201
+rDNS record for 54.167.7.110: ec2-54-167-7-110.compute-1.amazonaws.com
+
+PORT    STATE    SERVICE
+22/tcp  filtered ssh
+80/tcp  open     http
+443/tcp open     https
+
+# Nmap done at Tue Apr 29 10:05:30 2025 -- 1 IP address (1 host up) scanned in 1.53 seconds
