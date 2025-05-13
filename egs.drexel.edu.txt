@@ -1,0 +1,212 @@
+_______________________________________________________________
+         __          _______   _____
+         \ \        / /  __ \ / ____|
+          \ \  /\  / /| |__) | (___   ___  __ _ _ __ ®
+           \ \/  \/ / |  ___/ \___ \ / __|/ _` | '_ \
+            \  /\  /  | |     ____) | (__| (_| | | | |
+             \/  \/   |_|    |_____/ \___|\__,_|_| |_|
+
+         WordPress Security Scanner by the WPScan Team
+                         Version 3.8.28
+       Sponsored by Automattic - https://automattic.com/
+       @_WPScan_, @ethicalhack3r, @erwan_lr, @firefart
+_______________________________________________________________
+
+[32m[+][0m URL: https://egs.drexel.edu/ [129.25.139.186]
+[32m[+][0m Started: Tue May 13 19:19:51 2025
+
+Interesting Finding(s):
+
+[32m[+][0m Headers
+ | Interesting Entries:
+ |  - server: nginx
+ |  - x-powered-by: PHP/8.3.20, PleskLin
+ | Found By: Headers (Passive Detection)
+ | Confidence: 100%
+
+[32m[+][0m robots.txt found: https://egs.drexel.edu/robots.txt
+ | Interesting Entries:
+ |  - /wp-admin/
+ |  - /wp-admin/admin-ajax.php
+ | Found By: Robots Txt (Aggressive Detection)
+ | Confidence: 100%
+
+[32m[+][0m The external WP-Cron seems to be enabled: https://egs.drexel.edu/wp-cron.php
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 60%
+ | References:
+ |  - https://www.iplocation.net/defend-wordpress-from-ddos
+ |  - https://github.com/wpscanteam/wpscan/issues/1299
+
+[32m[+][0m WordPress version 6.8.1 identified (Latest, released on 2025-04-30).
+ | Found By: Rss Generator (Passive Detection)
+ |  - https://egs.drexel.edu/index.php/feed/, <generator>https://wordpress.org/?v=6.8.1</generator>
+ | Confirmed By: Emoji Settings (Passive Detection)
+ |  - https://egs.drexel.edu/, Match: 'wp-includes\/js\/wp-emoji-release.min.js?ver=6.8.1'
+
+[32m[+][0m WordPress theme in use: neve
+ | Location: https://egs.drexel.edu/wp-content/themes/neve/
+ | Latest Version: 4.0.1 (up to date)
+ | Last Updated: 2025-02-03T00:00:00.000Z
+ | Style URL: https://egs.drexel.edu/wp-content/themes/neve/style.css
+ | Style Name: Neve
+ | Style URI: https://themeisle.com/themes/neve/
+ | Description: Neve is a next-generation, ultra-fast WordPress theme designed for top performance, SEO, and Core We...
+ | Author: ThemeIsle
+ | Author URI: https://themeisle.com
+ |
+ | Found By: Urls In Homepage (Passive Detection)
+ | Confirmed By: Urls In 404 Page (Passive Detection)
+ |
+ | Version: 4.0.1 (80% confidence)
+ | Found By: Style (Passive Detection)
+ |  - https://egs.drexel.edu/wp-content/themes/neve/style.css, Match: 'Version:        4.0.1'
+
+[32m[+][0m Enumerating Vulnerable Plugins (via Passive Methods)
+[32m[+][0m Checking Plugin Versions (via Passive and Aggressive Methods)
+
+[34m[i][0m Plugin(s) Identified:
+
+[32m[+][0m the-post-grid
+ | Location: https://egs.drexel.edu/wp-content/plugins/the-post-grid/
+ | Latest Version: 7.7.20
+ | Last Updated: 2025-05-07T06:44:00.000Z
+ |
+ | Found By: Urls In Homepage (Passive Detection)
+ | Confirmed By: Urls In 404 Page (Passive Detection)
+ |
+ | [31m[!][0m 11 vulnerabilities identified:
+ |
+ | [31m[!][0m Title: The Post Grid <= 5.0.4 - Settings Update via CSRF
+ |     Fixed in: 5.0.5
+ |     References:
+ |      - https://wpscan.com/vulnerability/8f0d9476-4063-494b-b7d5-86d247dcb44c
+ |      - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-46853
+ |
+ | [31m[!][0m Title: The Post Grid < 7.2.8 - Block CSS Update via CSRF
+ |     Fixed in: 7.2.8
+ |     References:
+ |      - https://wpscan.com/vulnerability/23ac53df-5076-4346-bd37-515ab468e21b
+ |      - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-39923
+ |
+ | [31m[!][0m Title: The Post Grid – Shortcode, Gutenberg Blocks and Elementor Addon for Post Grid < 7.7.0 - Missing Authorization
+ |     Fixed in: 7.7.0
+ |     References:
+ |      - https://wpscan.com/vulnerability/56f0803c-4595-47d8-903d-eb6d04cc29cf
+ |      - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-3936
+ |      - https://www.wordfence.com/threat-intel/vulnerabilities/id/f4ef2ced-3c82-4379-8b14-1cf11482fd35
+ |
+ | [31m[!][0m Title: The Post Grid – Shortcode, Gutenberg Blocks and Elementor Addon for Post Grid < 7.7.2 - Authenticated (Contributor+) Stored Cross-Site Scripting
+ |     Fixed in: 7.7.2
+ |     References:
+ |      - https://wpscan.com/vulnerability/ef651a41-2c42-4e82-b169-28e0e41fe880
+ |      - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-35739
+ |      - https://www.wordfence.com/threat-intel/vulnerabilities/id/26705757-1d3f-4477-b99a-beb229cf36db
+ |
+ | [31m[!][0m Title: The Post Grid < 7.7.2 - Authenticated(Contributor+) Stored Cross-Site Scripting via section title tag
+ |     Fixed in: 7.7.2
+ |     References:
+ |      - https://wpscan.com/vulnerability/33fb38e4-6717-497c-a2e2-bc2ddd00f789
+ |      - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-1427
+ |      - https://www.wordfence.com/threat-intel/vulnerabilities/id/fc870ce5-1352-43f2-b80b-45065ceed750
+ |
+ | [31m[!][0m Title: The Post Grid < 7.7.5 - Missing Authorization via save_block_css
+ |     Fixed in: 7.7.5
+ |     References:
+ |      - https://wpscan.com/vulnerability/c84d0648-ba9a-4e0c-8b41-5665f7451abd
+ |      - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-37483
+ |      - https://www.wordfence.com/threat-intel/vulnerabilities/id/a7beba4f-7704-4b98-9391-de85f86219aa
+ |
+ | [31m[!][0m Title: The Post Grid < 7.7.5 - Missing Authorization via AJAX
+ |     Fixed in: 7.7.5
+ |     References:
+ |      - https://wpscan.com/vulnerability/efa6146e-250e-4ab5-9bb7-31ad60ccea06
+ |      - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-37482
+ |      - https://www.wordfence.com/threat-intel/vulnerabilities/id/c20c1fb1-8803-4f84-bdbb-6f03edd907cf
+ |
+ | [31m[!][0m Title: The Post Grid < 7.7.5 - Missing Authorization via REST API
+ |     Fixed in: 7.7.5
+ |     References:
+ |      - https://wpscan.com/vulnerability/b740fdce-ce7c-4423-b3d9-c3b767f3687b
+ |      - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-37481
+ |      - https://www.wordfence.com/threat-intel/vulnerabilities/id/ed2511a2-745a-42a9-a78c-96e35b4cb156
+ |
+ | [31m[!][0m Title: The Post Grid < 7.7.12 - Authenticated (Contributor+) Information Disclosure
+ |     Fixed in: 7.7.12
+ |     References:
+ |      - https://wpscan.com/vulnerability/5dd682ca-b295-4fbf-8bfd-dc8aa9d6b6f5
+ |      - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-7418
+ |      - https://www.wordfence.com/threat-intel/vulnerabilities/id/dddecb2e-9ad6-4e44-afce-5eba7da6322d
+ |
+ | [31m[!][0m Title: The Post Grid < 7.5.0 - Editor+ Stored XSS via Grid Creation
+ |     Fixed in: 7.5.0
+ |     References:
+ |      - https://wpscan.com/vulnerability/63cbe5f4-fe0f-499f-a964-cf4fbedcfa25
+ |      - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-3635
+ |      - https://research.cleantalk.org/cve-2024-3635/
+ |
+ | [31m[!][0m Title: The Post Grid < 7.7.18 - Contributor+ Local File Inclusion
+ |     Fixed in: 7.7.18
+ |     References:
+ |      - https://wpscan.com/vulnerability/3d78900b-3708-4538-8e06-7c7670484e78
+ |      - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-30814
+ |      - https://www.wordfence.com/threat-intel/vulnerabilities/id/e267c589-6b2a-40b3-beeb-0e397d9076e7
+ |
+ | The version could not be determined.
+
+[32m[+][0m Enumerating Vulnerable Themes (via Passive and Aggressive Methods)
+
+ Checking Known Locations -: |=========================================================================================================================================================================================================|
+[32m[+][0m Checking Theme Versions (via Passive and Aggressive Methods)
+
+[34m[i][0m No themes Found.
+
+[32m[+][0m Enumerating Users (via Passive and Aggressive Methods)
+
+ Brute Forcing Author IDs -: |=========================================================================================================================================================================================================|
+
+[34m[i][0m User(s) Identified:
+
+[32m[+][0m Emery Kaczmarek Johnson
+ | Found By: Rss Generator (Passive Detection)
+
+[32m[+][0m Frank Lee
+ | Found By: Rss Generator (Passive Detection)
+
+[32m[+][0m awadmin
+ | Found By: Author Sitemap (Aggressive Detection)
+ |  - https://egs.drexel.edu/wp-sitemap-users-1.xml
+ | Confirmed By: Login Error Messages (Aggressive Detection)
+
+[32m[+][0m evanwhitaker
+ | Found By: Author Sitemap (Aggressive Detection)
+ |  - https://egs.drexel.edu/wp-sitemap-users-1.xml
+ | Confirmed By: Login Error Messages (Aggressive Detection)
+
+[32m[+][0m ezk23
+ | Found By: Author Sitemap (Aggressive Detection)
+ |  - https://egs.drexel.edu/wp-sitemap-users-1.xml
+ | Confirmed By: Login Error Messages (Aggressive Detection)
+
+[32m[+][0m fjl24
+ | Found By: Author Sitemap (Aggressive Detection)
+ |  - https://egs.drexel.edu/wp-sitemap-users-1.xml
+ | Confirmed By: Login Error Messages (Aggressive Detection)
+
+[32m[+][0m gabe_ferreira
+ | Found By: Author Sitemap (Aggressive Detection)
+ |  - https://egs.drexel.edu/wp-sitemap-users-1.xml
+ | Confirmed By: Login Error Messages (Aggressive Detection)
+
+[32m[+][0m WPScan DB API OK
+ | Plan: free
+ | Requests Done (during the scan): 6
+ | Requests Remaining: 13
+
+[32m[+][0m Finished: Tue May 13 19:20:16 2025
+[32m[+][0m Requests Done: 735
+[32m[+][0m Cached Requests: 12
+[32m[+][0m Data Sent: 196.52 KB
+[32m[+][0m Data Received: 985.227 KB
+[32m[+][0m Memory used: 274.352 MB
+[32m[+][0m Elapsed time: 00:00:25
