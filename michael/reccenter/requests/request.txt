@@ -1,0 +1,26 @@
+POST /api/Price/GetPrices HTTP/1.1
+Host: reccenter.drexel.edu
+Cookie: cookieControl=true; cookieControlPrefs=[]; _gcl_au=1.1.81632996.1744314157; _scid=sBPoK22uMAOLjLV3_U8C6r8opKmbFWJQ; _tt_enable_cookie=1; _ttp=01JRGKM8G0H37CPJN2G1HTCX76_.tt.1; _fbp=fb.1.1744314182622.566756370983225671; nmstat=c77b5e29-fced-f5e8-d9ac-cf75a19087ed; _ScCbts=%5B%5D; _sctr=1%7C1747440000000; _clck=1lwaoso%7C2%7Cfvz%7C0%7C1926; _ga_6KJ1PNLE19=GS2.1.s1747506630$o2$g0$t1747506692$j60$l0$h0$dAqRFMM8R2lC9SmtuNZvitrhB69BQTvsGQg; _scid_r=y5PoK22uMAOLjLV3_U8C6r8opKmbFWJQuDcfKw; _gid=GA1.2.603323816.1747506925; ttcsid=1747506640655::YjBVScYn5H-0NlOne5Mf.2.1747506959925; ttcsid_CDDEEI3C77U1JEFR7PNG=1747506640653::vjFrNYrdvArOHS6tHI5B.2.1747506960135; ASP.NET_SessionId=dfgzfhh334cxgjv1mxr00ao4; __RequestVerificationToken=7PjlyMwU_xWwsxhhZJrbyoO6Tk8LXO71vKMb1ZJfZbmEMD4JYKCuWzAHEk9y3HVJLLmIRqrp9mVAYOrXMwE92ESuTLa0PZqP67Czeip6klw1; _ga_H9NXSPBKEB=GS2.1.s1747506688$o2$g0$t1747507850$j0$l0$h0; _ga=GA1.1.818082011.1744314173; .AspNet.ApplicationCookie=8a5nSSfCCaQSpAYxF73fejNc_enKBTzowA1JuJa2WYFn7OA3HPkOPS-tgL1K3VYzy14ExC-PjWBbDkmUbZhDEt7sHC8oWg5pWVTAfmbRavuY_R7JCmSxYmgWc3J2LIj7a9gSM-0PLuRR1qAQIkYqt-K8yJ_9wZg18AmiZS4tcXaffsZiKIlWVZdL0xZ62K9jtE0UyGgxVlwoNf0kctvhIr-M6L6KdolljaXK5lh-KK2Z0qIjI6ii2Nrtxfj7Hx6DguO9jZSwcrdeC3KxEKWHivRsoJYiTQjI3xC7SBdR1mBVhEWAEmYlDaL-SrdIKcL82WEvNuwM9Hsr3mc5UjQWXXcYFRYGZps6Gw5N3L3KET5Hzdi_RvyH1Mvg9lC6C8jN9HJOcz-tMWP-t-5qhSl4Vg
+Content-Length: 65
+Sec-Ch-Ua-Platform: "Linux"
+Accept-Language: en-US,en;q=0.9
+Sec-Ch-Ua: "Not?A_Brand";v="99", "Chromium";v="130"
+Sec-Ch-Ua-Mobile: ?0
+X-Requested-With: XMLHttpRequest
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.6723.70 Safari/537.36
+Accept: */*
+Content-Type: application/json; charset=UTF-8
+Origin: https://reccenter.drexel.edu
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Accept-Encoding: gzip, deflate, br
+Priority: u=1, i
+Connection: keep-alive
+
+{
+  "ProgramIds":[
+    ""
+  ],
+  "CourseOfferingIds":null
+}
